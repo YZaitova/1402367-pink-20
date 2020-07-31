@@ -3,10 +3,156 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.scss">
   </head>
   <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <div class="header__logo">
+          <a class="header__link" href="index.html">
+            <img class="header__img-logo" src="img\logo.svg" alt="Логотип сайта 'Пинк'"/>
+          </a>
+        </div>
+        <ul class="header__list">
+          <li class="header__item"><a href="#">Главная</a></li>
+          <li class="header__item"><a href="photo.html">Фотографии</a></li>
+          <li class="header__item"><a href="form.html">Конкурс</a></li>
+          <li class="header__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <h2 class="promo__heading">
+          Взгляните на жизнь иначе!
+        </h2>
+        <a href="#" class="promo__btn">Скачать приложение</a>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <a href="" class="promo__link">
+              <img src="img/apple.svg" alt="Скачивание на iPhone, iPad, MacOSX" class="promo__img">
+            </a>
+          </li>
+          <li class="promo__item">
+            <a href="#" class="promo__link">
+              <img src="img/android.svg" alt="Скачивание на Android" class="promo__img">
+            </a>
+          </li>
+          <li class="promo__item">
+            <a href="#" class="promo__link">
+              <img src="img/windows.svg" alt="Скачивание на Windows" class="promo__img">
+            </a>
+          </li>
+        </ul>
+        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </header>
+    <main>
+      <section class="benefits">
+        <h2 class="visually-hidden">Преимущества использования сайта</h2>
+        <p class="benefits__text">Устали от серости мегаполиса?</p>
+        <p class="benefits__text">Нам есть, что вам предложить!</p>
+        <div class="benefits__list">
+          <div class="benefits__item">
+            <img src="css/mood.jpg" alt="">
+            <h4 class="benefits__heading">Поднимает настроение</h4>
+            <p class="benefits__paragraph">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </div>
+          <div class="benefits__item">
+            <img src="css/change_world.jpg" alt="">
+            <h4 class="benefits__heading">Меняет мир вокруг</h4>
+            <p class="benefits__paragraph">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </div>
+          <div class="benefits__item">
+            <img src="css/make_friends.jpg" alt="">
+            <h4 class="benefits__heading">Заводит новых друзей</h4>
+            <p class="benefits__paragraph">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="research">
+        <h4 class="research__heading">Эффект на 24 часа!</h4>
+        <p class="research__text">
+          Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+        </p>
+        <a class="research__link" href="#">Узнать больше об исследовании</a>
+      </section>
+      <section class="reviews">
+        <div class="reviews__list slider">
+          <blockquote class="reviews__item slider__item">
+            <div class="reviews__author-info">
+              <p class="reviews__text">
+                Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+                привычные серые вещи! А еще я познакомился со своей будущей женой в
+                комментариях к выложенной фотографии!
+              </p>
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-age">25 лет, водитель трамвая</p>
+            </div>
+          </blockquote>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <h3 class="contacts__heading">Остались вопросы?</h3>
+        <h3 class="contacts__heading">Свяжитесь с нами!</h3>
+        <div class="contacts__list">
+          <div class="contacts__item">
+            <p class="contacts__text">Звоните:<br>
+              <a class="contacts__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </p>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__text">
+              Приезжайте в гости:
+            </p>
+            <p class="contacts__paragraph">
+              ул. Большая Конюшенная, 19/8
+            </p>
+          </div>
+          <div class="contacts__item">
+            <p class="contacts__feedback">Пишите:<br>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a class="footer__link" href="index.html">
+          <img class="footer__img-logo" src="img\logo.svg" alt="Логотип сайта 'Пинк'"/>
+        </a>
+      </div>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/twitter.svg" alt="Социальная сеть 'Твиттер'" class="socials__img">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/facebook.svg" alt="Социальная сеть 'Фейсбук'" class="socials__img">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/google_play.svg" alt="Социальная сеть 'Гуглплей'" class="socials__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    
   </body>
 </html>
