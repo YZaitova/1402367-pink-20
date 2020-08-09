@@ -5,8 +5,190 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="header">
+      <nav class="header__navigation">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'" width="74" height="23"/>
+          </a>
+        </div>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
+          <li class="header__item header__item--active"><a class="header__link" href="#">Фотографии</a></li>
+          <li class="header__item"><a class="header__link" href="form.html">Конкурс</a></li>
+          <li class="header__item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <h2 class="promo__heading">
+          Фотографии пользователей
+        </h2>
+      </section>
+    </header>
+    <main>
+      <section class="panorama">
+        <h3 class="panorama__heading">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </h3>
+        <img src="img/panorama.jpg" alt="Панорама"/>
+        <a href="#" class="panorama__link">Панорама дня</a>
+        <div class="panorama__comment">
+          <div class="panorama__box">
+            <h4 class="panorama__heading">Анна<span class="photo__time">(5 минут назад)</span></h4>
+            <div class="panorama__like">
+              <p class="like__text">Нравится: 215</p>
+              <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+            </div>
+          </div>
+          <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        </div>
+      </section>
+      <section class="photos">
+      <h3 class="visually-hidden">Фотографии пользователей</h3>
+        <ul class="photos__list">
+          <li class="photos__item">
+            <article class="photo">
+              <img class="photo__img" src="img/photo1.img" alt="Фото пользователя Левон">
+              <h4 class="photo__heading">Левон<span class="photo__time">(5 часов назад)</span></h4>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__like">
+                <p class="like__text">Нравится: 356</p>
+                <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="photo">
+              <img class="photo__img" src="img/photo2.img" alt="Фото пользователя Антон">
+              <h4 class="photo__heading">Антон<span class="photo__time">(12 часов назад)</span></h4>
+              <p class="photo__text">Соседи будут рады!</p>
+              <div class="photo__like">
+                <p class="like__text">Нравится: 666</p>
+                <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="photo">
+              <img class="photo__img" src="img/photo3.img" alt="Фото пользователя Борис">
+              <h4 class="photo__heading">Борис<span class="photo__time">(20 часов назад)</span></h4>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__like">
+                <p class="like__text">Нравится: 215</p>
+                <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="photo">
+              <img class="photo__img" src="img/photo4.img" alt="Фото пользователя Сергей">
+              <h4 class="photo__heading">Сергей<span class="photo__time">(25 часов назад)</span></h4>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <div class="photo__like">
+                <p class="like__text">Нравится: 4</p>
+                <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="photo">
+              <img class="photo__img" src="img/photo5.img" alt="Фото пользователя Максим">
+              <h4 class="photo__heading">Максим<span class="photo__time">(40 часов назад)</span></h4>
+              <p class="photo__text">Где снег-то?</p>
+              <div class="photo__like">
+                <p class="like__text">Нравится: 150</p>
+                <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+              </div>
+            </article>
+          </li>
+          <li class="photos__item">
+            <article class="photo">
+              <img class="photo__img" src="img/photo6.img" alt="Фото пользователя Надежда">
+              <h4 class="photo__heading">Надежда<span class="photo__time">(45 часов назад)</span></h4>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <div class="photo__like">
+                <p class="like__text">Нравится: 2560</p>
+                <p class="like__paragraph"><img class="like__img" src="img/like.svg" alt="Поставить лайк фотографии"></p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section class="treatment">
+        <h3 class="treatment__heading">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </h3>
+        <div class="treatment__box">
+          <div class="treatment__box-img">
+            <img class="treatment__img" src="img/landscape.jpg" alt="Изображение, которое Вы обрабатываете"  width="300" height="400" />
+          </div>
+          <div class="treatment__filters">
+            <div class="filter__list filter__item--crop">
+              <div class="filter__item">
+                <img class="filter__item" src="img/crop.svg" alt="Обрезать изображение">
+                <div class="filter__range">
+                  <div class="filter__scale">
+                  </div>
+                  <div class="filter__toggle" tabindex="0"></div>
+                </div>
+              </div>
+              <div class="filter__item">
+                <img class="filter__item filter__item--fill" src="img/fill.svg" alt="Инструмент заливка">
+                <div class="filter__range">
+                  <div class="filter__scale">
+                  </div>
+                  <div class="filter__toggle" tabindex="0"></div>
+                </div>
+              </div>
+              <div class="filter__item filter__item--contrast">
+                <img class="filter__item" src="img/contrast.svg" alt="Изменить контрастность изображения">
+                <div class="filter__range">
+                  <div class="filter__scale">
+                  </div>
+                  <div class="filter__toggle" tabindex="0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__buttons">
+              <button type="submit">Запостить</button>
+              <button type="reset" disabled>Отмена</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a class="footer__link" href="index.html">
+          <img class="footer__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
+        </a>
+      </div>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/twitter.svg" alt="Социальная сеть 'Твиттер'" class="socials__img">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/facebook.svg" alt="Социальная сеть 'Фейсбук'" class="socials__img">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/google_play.svg" alt="Социальная сеть 'Гуглплей'" class="socials__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="developers">
+        <a class="developers__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developers__img" src="img/htmlacademy.svg" alt="Ссылка на лендинг курса">
+        </a>
+      </div>
+    </footer>
 
   </body>
 </html>
