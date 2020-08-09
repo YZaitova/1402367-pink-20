@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">
+            <img class="header__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
+          </a>
+        </div>
+        <!-- <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
+          <li class="header__item"><a class="header__link" href="photo.html">Фотографии</a></li>
+          <li class="header__item header__item--active"><a class="header__link" href="#">Конкурс</a></li>
+          <li class="header__item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <h2 class="promo__heading">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h2>
+      </section>
+    </header>
+    <main>
+      <section class="contest">
+        <h3 class="contest__heading">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          Пожалуйста, заполните форму ниже:</h3>
+        <form class="contest__form form" action="https://echo.htmlacademy.ru/courses" method="GET">
+          <label class="form__text">
+            Фамилия:
+            <input class="form__input" type="text" name="user-surname" placeholder="Укажите фамилию *">
+          </label>
+          <label class="form__text">
+            Имя:
+            <input type="text" name="user-name" placeholder="Введите ваше имя *">
+          </label>
+          <label class="form__text">
+            Отчество:
+            <input type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+          </label>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <label class="form__text">
+              <input class="form__radio" type="radio" name="app" value="ios">
+              Pink для iOS
+            </label>
+            <label class="form__text">
+              <input class="form__radio" type="radio" name="app" value="android">
+              Pink на Android
+            </label>
+            <label class="form__text">
+              <input class="form__radio" type="radio" name="app" value="windows">
+              Windows Phone
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактная информация</legend>
+            <label class="form__text">
+              <input type="number" name="user-number" placeholder="Номер, пожалуйста">
+              Номер телефона
+            </label>
+            <label class="form__text">
+              <input type="email" name="user-email" placeholder="Введите почту *">
+              Адрес почты
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <label class="form__text">
+              <input class="form__checkbox" type="checkbox" name="selfie-shark">
+              Сделал селфи с акулой
+            </label>
+            <label class="form__text">
+              <input class="form__checkbox" type="checkbox" name="burned-beach">
+              Обгорел на пляже
+            </label>
+            <label class="form__text">
+              <input class="form__checkbox" type="checkbox" name="saw-chuck">
+              Видел Чака Норриса
+            </label>
+            <label class="form__text">
+              <input class="form__checkbox" type="checkbox" name="buy-souvenir">
+              Накупил сувениров
+            </label>
+            <label class="form__text">
+              <input class="form__checkbox" type="checkbox" name="keep-towers">
+              Удержал башню
+            </label>
+            <label class="form__text">
+              <input class="form__checkbox" type="checkbox" name="destroy-hotel">
+              Разгромил отель
+            </label>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <input class="form__btn" type="button" value="Отправить форму">
+          <p class="form__paragraph">* — обязательные для заполнения поля</p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a class="footer__link" href="index.html">
+          <img class="footer__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
+        </a>
+      </div>
+      <div class="socials">
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/twitter.svg" alt="Социальная сеть 'Твиттер'" class="socials__img">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/facebook.svg" alt="Социальная сеть 'Фейсбук'" class="socials__img">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" class="socials__link">
+              <img src="css/google_play.svg" alt="Социальная сеть 'Гуглплей'" class="socials__img">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="developers">
+        <a class="developers__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developers__img" src="img/htmlacademy.svg" alt="Ссылка на лендинг курса">
+        </a>
+      </div>
+    </footer>
+    <section class="modal modal__succsess">
+      <h4 class="modal__heading">Ваша заявка отправлена</h4>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal__button">
+        <button class="modal__btn">Закрыть окно</button>
+      </div>
+    </section>
+    <section class="modal modal__error">
+      <h4 class="modal__heading">Что-то пошло не так!</h4>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__button">
+        <button class="modal__btn">Ок</button>
+      </div>
+    </section>
+
+
+  </body>
+</html>
