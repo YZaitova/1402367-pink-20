@@ -8,11 +8,9 @@
   <body>
     <header class="header">
       <nav class="header__navigation">
-        <div class="header__logo">
-          <a class="header__logo-link" href="index.html">
-            <img class="header__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
-          </a>
-        </div>
+        <a class="logo header__logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+        </a>
         <ul class="header__list">
           <li class="header__item header__item--active"><a href="#">Главная</a></li>
           <li class="header__item"><a href="photo.html">Фотографии</a></li>
@@ -24,11 +22,11 @@
         <h2 class="promo__heading">
           Взгляните на жизнь иначе!
         </h2>
-        <a href="#" class="promo__btn">Скачать приложение</a>
+        <a class="promo__btn" href="#">Скачать приложение</a>
         <ul class="promo__list">
           <li class="promo__item">
             <a href="" class="promo__link">
-              <img src="img/apple.svg" alt="Скачивание на iPhone, iPad, MacOSX" class="promo__img">
+              <img class="promo__img" src="img/apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
             </a>
           </li>
           <li class="promo__item">
@@ -53,21 +51,21 @@
         <p class="benefits__text">Нам есть, что вам предложить!</p>
         <div class="benefits__list">
           <div class="benefits__item">
-            <img src="css/mood.jpg" alt="">
+            <img class="benefits__img" src="img/mood.jpg" alt="">
             <h4 class="benefits__heading">Поднимает настроение</h4>
             <p class="benefits__paragraph">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </div>
           <div class="benefits__item">
-            <img src="css/change_world.jpg" alt="">
+            <img src="img/change-world.jpg" alt="">
             <h4 class="benefits__heading">Меняет мир вокруг</h4>
             <p class="benefits__paragraph">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </div>
           <div class="benefits__item">
-            <img src="css/make_friends.jpg" alt="">
+            <img src="img/make-friends.jpg" alt="">
             <h4 class="benefits__heading">Заводит новых друзей</h4>
             <p class="benefits__paragraph">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
@@ -86,20 +84,18 @@
         <h4 class="visually-hidden">Отзывы пользователей сайта 'Pink'</h4>
         <div class="reviews__list slider">
           <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!
-              </p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-age">25 лет, водитель трамвая</p>
-            </div>
+            <p class="reviews__text">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!
+            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-age">25 лет, водитель трамвая</p>
           </blockquote>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <a class="slider__toggle slider__toggle--current" href="#">1</a>
+            <a class="slider__toggle" href="#">2</a>
+            <a class="slider__toggle" href="#">3</a>
           </p>
         </div>
       </section>
@@ -113,22 +109,22 @@
             <th>Анлим</th>
           </tr>
           <tr>
-            <td>Розовый фильтр</td>
-            <td><img src="img/tick.svg" alt="Розовый фильтр включен в тариф"></td>
-            <td><img src="img/tick.svg" alt="Розовый фильтр включен в тариф"></td>
-            <td><img src="img/tick.svg" alt="Розовый фильтр включен в тариф"></td>
+            <td class="table__data">Розовый фильтр</td>
+            <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
           </tr>
           <tr>
             <td>Смайлики</td>
-            <td><img src="img/cross.svg" alt="Смайлики не включены в тариф"></td>
-            <td><img src="img/tick.svg" alt="Смайлики включены в тариф"></td>
-            <td><img src="img/tick.svg" alt="Смайлики включены в тариф"></td>
+            <td class="table__data table__img--cross" aria-label="Смайлики не включены в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Смайлики включены в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Смайлики включены в тариф"></td>
           </tr>
           <tr>
             <td>Комментарии</td>
-            <td><img src="img/cross.svg" alt="Комментарии не включены в тариф"></td>
-            <td><img src="img/cross.svg" alt="Комментарии не включены в тариф"></td>
-            <td><img src="img/tick.svg" alt="Комментарии включены в тариф"></td>
+            <td class="table__data table__img--cross" aria-label="Комментарии не включены в тариф"></td>
+            <td class="table__data table__img--cross" aria-label="Комментарии не включены в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Комментарии включены в тариф"></td>
           </tr>
         </table>
       </section>
@@ -161,26 +157,24 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <a class="footer__link" href="index.html">
-          <img class="footer__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
-        </a>
-      </div>
+      <a class="logo footer__logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+      </a>
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img src="css/twitter.svg" alt="Социальная сеть 'Твиттер'" class="socials__img">
+              <img class="socials__img" src="img/twitter.svg" alt="Социальная сеть 'Твиттер'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img src="css/facebook.svg" alt="Социальная сеть 'Фейсбук'" class="socials__img">
+              <img class="socials__img" src="img/facebook.svg" alt="Социальная сеть 'Фейсбук'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img src="css/google_play.svg" alt="Социальная сеть 'Гуглплей'" class="socials__img">
+              <img class="socials__img" src="img/google-play.svg" alt="Социальная сеть 'Гуглплей'">
             </a>
           </li>
         </ul>
