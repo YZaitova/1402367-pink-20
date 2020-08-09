@@ -8,15 +8,18 @@
     <header class="header">
       <nav class="header__navigation">
         <div class="header__logo">
-          <a class="header__link" href="index.html">
-            <img class="header__img-logo" src="img\logo.svg" alt="Логотип сайта 'Пинк'"/>
+          <a class="header__logo-link" href="index.html">
+            <img class="header__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
           </a>
         </div>
+        <!-- <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
         <ul class="header__list">
-          <li class="header__item"><a href="index.html">Главная</a></li>
-          <li class="header__item"><a href="photo.html">Фотографии</a></li>
-          <li class="header__item"><a href="#">Конкурс</a></li>
-          <li class="header__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+          <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
+          <li class="header__item"><a class="header__link" href="photo.html">Фотографии</a></li>
+          <li class="header__item header__item--active"><a class="header__link" href="#">Конкурс</a></li>
+          <li class="header__item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
       </nav>
       <section class="promo">
@@ -97,7 +100,7 @@
           </fieldset>
           <fieldset class="form__fieldset">
             <legend class="form__legend">Опишите свои эмоции</legend>
-            <textarea class="form__textarea" name="textarea" id="" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <input class="form__btn" type="button" value="Отправить форму">
           <p class="form__paragraph">* — обязательные для заполнения поля</p>
@@ -107,7 +110,7 @@
     <footer class="footer">
       <div class="footer__logo">
         <a class="footer__link" href="index.html">
-          <img class="footer__img-logo" src="img\logo.svg" alt="Логотип сайта 'Пинк'"/>
+          <img class="footer__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
         </a>
       </div>
       <div class="socials">
