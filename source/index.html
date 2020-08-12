@@ -7,16 +7,17 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-        <a class="logo header__logo" href="index.html">
-          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
-        </a>
-        <ul class="header__list">
-          <li class="header__item header__item--active"><a href="#">Главная</a></li>
-          <li class="header__item"><a href="photo.html">Фотографии</a></li>
-          <li class="header__item"><a href="form.html">Конкурс</a></li>
-          <li class="header__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-        </ul>
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+      </a>
+      <!-- <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
+      <nav class="header__nav">
+        <a class="header__link" href="index.html">Главная</a>
+        <a class="header__link header__link--active" href="#">Фотографии</a>
+        <a class="header__link" href="form.html">Конкурс</a>
+        <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </nav>
       <section class="promo">
         <h2 class="promo__heading">
@@ -46,32 +47,28 @@
     <main>
       <h1 class="visually-hidden">Сайт «Pink» — взгляните на жизнь иначе!</h1>
       <section class="benefits">
-        <h2 class="visually-hidden">Преимущества использования сайта</h2>
-        <p class="benefits__text">Устали от серости мегаполиса?</p>
-        <p class="benefits__text">Нам есть, что вам предложить!</p>
-        <div class="benefits__list">
-          <div class="benefits__item">
-            <img class="benefits__img" src="img/mood.jpg" alt="">
+        <h2 class="benefits__text">Устали от серости мегаполиса?</h2>
+        <h3 class="benefits__text">Нам есть, что вам предложить!</h3>
+        <ul class="benefits__list">
+          <li class="benefits__item">
             <h4 class="benefits__heading">Поднимает настроение</h4>
             <p class="benefits__paragraph">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
-          </div>
-          <div class="benefits__item">
-            <img src="img/change-world.jpg" alt="">
+          </li>
+          <li class="benefits__item">
             <h4 class="benefits__heading">Меняет мир вокруг</h4>
             <p class="benefits__paragraph">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
-          </div>
-          <div class="benefits__item">
-            <img src="img/make-friends.jpg" alt="">
+          </li>
+          <li class="benefits__item">
             <h4 class="benefits__heading">Заводит новых друзей</h4>
             <p class="benefits__paragraph">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="research">
         <h4 class="research__heading">Эффект на 24 часа!</h4>
@@ -131,26 +128,26 @@
       <section class="contacts">
         <h3 class="contacts__heading">Остались вопросы?</h3>
         <h3 class="contacts__heading">Свяжитесь с нами!</h3>
-        <div class="contacts__list">
-          <div class="contacts__item">
+        <ul class="contacts__list">
+          <li class="contacts__item">
             <p class="contacts__text">Звоните:<br>
               <a class="contacts__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
-          </div>
-          <div class="contacts__item">
+          </li>
+          <li class="contacts__item">
             <p class="contacts__text">
               Приезжайте в гости:
             </p>
             <p class="contacts__paragraph">
               ул. Большая Конюшенная, 19/8
             </p>
-          </div>
-          <div class="contacts__item">
+          </li>
+          <li class="contacts__item">
             <p class="contacts__feedback">Пишите:<br>
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="contacts__map">
           <!-- <iframe src="" frameborder="0"></iframe> -->
         </div>

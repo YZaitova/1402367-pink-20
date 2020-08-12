@@ -7,16 +7,17 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-        <a class="logo header__logo" href="index.html">
-          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
-        </a>
-        <ul class="header__list">
-          <li class="header__item"><a class="header__link" href="index.html">Главная</a></li>
-          <li class="header__item header__item--active"><a class="header__link" href="#">Фотографии</a></li>
-          <li class="header__item"><a class="header__link" href="form.html">Конкурс</a></li>
-          <li class="header__item"><a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-        </ul>
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+      </a>
+      <!-- <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
+      <nav class="header__nav">
+        <a class="header__link" href="index.html">Главная</a>
+        <a class="header__link header__link--active" href="#">Фотографии</a>
+        <a class="header__link" href="form.html">Конкурс</a>
+        <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </nav>
       <section class="promo">
         <h2 class="promo__heading">
@@ -34,7 +35,7 @@
         <div class="panorama__comment">
           <div class="panorama__box">
             <h4 class="panorama__heading">Анна<span class="photo__time">(5 минут назад)</span></h4>
-            <div class="panorama__like">
+            <div class="panorama__like like">
               <p class="like__text">Нравится: 215</p>
               <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
             </div>
@@ -43,75 +44,61 @@
         </div>
       </section>
       <section class="photos">
-      <h3 class="visually-hidden">Фотографии пользователей</h3>
-        <ul class="photos__list">
-          <li class="photos__item">
-            <article class="photo">
-              <img class="photo__img" src="img/photo1.img" alt="Фото пользователя Левон">
-              <h4 class="photo__heading">Левон<span class="photo__time">(5 часов назад)</span></h4>
-              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="photo__like like">
-                <p class="like__text">Нравится: 356</p>
-                <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-              </div>
-            </article>
-          </li>
-          <li class="photos__item">
-            <article class="photo">
-              <img class="photo__img" src="img/photo2.img" alt="Фото пользователя Антон">
-              <h4 class="photo__heading">Антон<span class="photo__time">(12 часов назад)</span></h4>
-              <p class="photo__text">Соседи будут рады!</p>
-              <div class="photo__like like">
-                <p class="like__text">Нравится: 666</p>
-                <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-              </div>
-            </article>
-          </li>
-          <li class="photos__item">
-            <article class="photo">
-              <img class="photo__img" src="img/photo3.img" alt="Фото пользователя Борис">
-              <h4 class="photo__heading">Борис<span class="photo__time">(20 часов назад)</span></h4>
-              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="photo__like like">
-                <p class="like__text">Нравится: 215</p>
-                <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-              </div>
-            </article>
-          </li>
-          <li class="photos__item">
-            <article class="photo">
-              <img class="photo__img" src="img/photo4.img" alt="Фото пользователя Сергей">
-              <h4 class="photo__heading">Сергей<span class="photo__time">(25 часов назад)</span></h4>
-              <p class="photo__text">Самая кубанская в мире!</p>
-              <div class="photo__like like">
-                <p class="like__text">Нравится: 4</p>
-                <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-              </div>
-            </article>
-          </li>
-          <li class="photos__item">
-            <article class="photo">
-              <img class="photo__img" src="img/photo5.img" alt="Фото пользователя Максим">
-              <h4 class="photo__heading">Максим<span class="photo__time">(40 часов назад)</span></h4>
-              <p class="photo__text">Где снег-то?</p>
-              <div class="photo__like like">
-                <p class="like__text">Нравится: 150</p>
-                <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-              </div>
-            </article>
-          </li>
-          <li class="photos__item">
-            <article class="photo">
-              <img class="photo__img" src="img/photo6.img" alt="Фото пользователя Надежда">
-              <h4 class="photo__heading">Надежда<span class="photo__time">(45 часов назад)</span></h4>
-              <p class="photo__text">Всем GM и взаимные лайки!</p>
-              <div class="photo__like like">
-                <p class="like__text">Нравится: 2560</p>
-                <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-              </div>
-            </article>
-          </li>
-        </ul>
+        <h3 class="visually-hidden">Фотографии пользователей</h3>
+        <article class="photo">
+          <img class="photo__img" src="img/photo1.img" alt="Фото пользователя Левон">
+          <h4 class="photo__heading">Левон<span class="photo__time">(5 часов назад)</span></h4>
+          <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 356</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </article>
+        <article class="photo">
+          <img class="photo__img" src="img/photo2.img" alt="Фото пользователя Антон">
+          <h4 class="photo__heading">Антон<span class="photo__time">(12 часов назад)</span></h4>
+          <p class="photo__text">Соседи будут рады!</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 666</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </article>
+        <article class="photo">
+          <img class="photo__img" src="img/photo3.img" alt="Фото пользователя Борис">
+          <h4 class="photo__heading">Борис<span class="photo__time">(20 часов назад)</span></h4>
+          <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 215</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </article>
+        <article class="photo">
+          <img class="photo__img" src="img/photo4.img" alt="Фото пользователя Сергей">
+          <h4 class="photo__heading">Сергей<span class="photo__time">(25 часов назад)</span></h4>
+          <p class="photo__text">Самая кубанская в мире!</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 4</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </article>
+        <article class="photo">
+          <img class="photo__img" src="img/photo5.img" alt="Фото пользователя Максим">
+          <h4 class="photo__heading">Максим<span class="photo__time">(40 часов назад)</span></h4>
+          <p class="photo__text">Где снег-то?</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 150</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </article>
+        <article class="photo">
+          <img class="photo__img" src="img/photo6.img" alt="Фото пользователя Надежда">
+          <h4 class="photo__heading">Надежда<span class="photo__time">(45 часов назад)</span></h4>
+          <p class="photo__text">Всем GM и взаимные лайки!</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 2560</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </article>
       </section>
       <section class="treatment">
         <h3 class="treatment__heading">
