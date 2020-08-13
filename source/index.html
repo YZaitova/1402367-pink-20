@@ -7,28 +7,27 @@
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-        <div class="header__logo">
-          <a class="header__logo-link" href="index.html">
-            <img class="header__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
-          </a>
-        </div>
-        <ul class="header__list">
-          <li class="header__item header__item--active"><a href="#">Главная</a></li>
-          <li class="header__item"><a href="photo.html">Фотографии</a></li>
-          <li class="header__item"><a href="form.html">Конкурс</a></li>
-          <li class="header__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-        </ul>
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+      </a>
+      <!-- <button class="header__navigation-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button> -->
+      <nav class="header__nav">
+        <a class="header__link" href="index.html">Главная</a>
+        <a class="header__link header__link--active" href="#">Фотографии</a>
+        <a class="header__link" href="form.html">Конкурс</a>
+        <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </nav>
       <section class="promo">
         <h2 class="promo__heading">
           Взгляните на жизнь иначе!
         </h2>
-        <a href="#" class="promo__btn">Скачать приложение</a>
+        <a class="promo__btn" href="#">Скачать приложение</a>
         <ul class="promo__list">
           <li class="promo__item">
             <a href="" class="promo__link">
-              <img src="img/apple.svg" alt="Скачивание на iPhone, iPad, MacOSX" class="promo__img">
+              <img class="promo__img" src="img/apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
             </a>
           </li>
           <li class="promo__item">
@@ -48,32 +47,28 @@
     <main>
       <h1 class="visually-hidden">Сайт «Pink» — взгляните на жизнь иначе!</h1>
       <section class="benefits">
-        <h2 class="visually-hidden">Преимущества использования сайта</h2>
-        <p class="benefits__text">Устали от серости мегаполиса?</p>
-        <p class="benefits__text">Нам есть, что вам предложить!</p>
-        <div class="benefits__list">
-          <div class="benefits__item">
-            <img src="css/mood.jpg" alt="">
+        <h2 class="benefits__text">Устали от серости мегаполиса?</h2>
+        <h3 class="benefits__text">Нам есть, что вам предложить!</h3>
+        <ul class="benefits__list">
+          <li class="benefits__item">
             <h4 class="benefits__heading">Поднимает настроение</h4>
             <p class="benefits__paragraph">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
-          </div>
-          <div class="benefits__item">
-            <img src="css/change_world.jpg" alt="">
+          </li>
+          <li class="benefits__item">
             <h4 class="benefits__heading">Меняет мир вокруг</h4>
             <p class="benefits__paragraph">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
-          </div>
-          <div class="benefits__item">
-            <img src="css/make_friends.jpg" alt="">
+          </li>
+          <li class="benefits__item">
             <h4 class="benefits__heading">Заводит новых друзей</h4>
             <p class="benefits__paragraph">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="research">
         <h4 class="research__heading">Эффект на 24 часа!</h4>
@@ -86,20 +81,18 @@
         <h4 class="visually-hidden">Отзывы пользователей сайта 'Pink'</h4>
         <div class="reviews__list slider">
           <blockquote class="reviews__item slider__item">
-            <div class="reviews__author-info">
-              <p class="reviews__text">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!
-              </p>
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__author-age">25 лет, водитель трамвая</p>
-            </div>
+            <p class="reviews__text">
+              Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+              привычные серые вещи! А еще я познакомился со своей будущей женой в
+              комментариях к выложенной фотографии!
+            </p>
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__author-age">25 лет, водитель трамвая</p>
           </blockquote>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--current" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <a class="slider__toggle slider__toggle--current" href="#">1</a>
+            <a class="slider__toggle" href="#">2</a>
+            <a class="slider__toggle" href="#">3</a>
           </p>
         </div>
       </section>
@@ -113,74 +106,72 @@
             <th>Анлим</th>
           </tr>
           <tr>
-            <td>Розовый фильтр</td>
-            <td><img src="img/tick.svg" alt="Розовый фильтр включен в тариф"></td>
-            <td><img src="img/tick.svg" alt="Розовый фильтр включен в тариф"></td>
-            <td><img src="img/tick.svg" alt="Розовый фильтр включен в тариф"></td>
+            <td class="table__data">Розовый фильтр</td>
+            <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
           </tr>
           <tr>
             <td>Смайлики</td>
-            <td><img src="img/cross.svg" alt="Смайлики не включены в тариф"></td>
-            <td><img src="img/tick.svg" alt="Смайлики включены в тариф"></td>
-            <td><img src="img/tick.svg" alt="Смайлики включены в тариф"></td>
+            <td class="table__data table__img--cross" aria-label="Смайлики не включены в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Смайлики включены в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Смайлики включены в тариф"></td>
           </tr>
           <tr>
             <td>Комментарии</td>
-            <td><img src="img/cross.svg" alt="Комментарии не включены в тариф"></td>
-            <td><img src="img/cross.svg" alt="Комментарии не включены в тариф"></td>
-            <td><img src="img/tick.svg" alt="Комментарии включены в тариф"></td>
+            <td class="table__data table__img--cross" aria-label="Комментарии не включены в тариф"></td>
+            <td class="table__data table__img--cross" aria-label="Комментарии не включены в тариф"></td>
+            <td class="table__data table__img--tick" aria-label="Комментарии включены в тариф"></td>
           </tr>
         </table>
       </section>
       <section class="contacts">
         <h3 class="contacts__heading">Остались вопросы?</h3>
         <h3 class="contacts__heading">Свяжитесь с нами!</h3>
-        <div class="contacts__list">
-          <div class="contacts__item">
+        <ul class="contacts__list">
+          <li class="contacts__item">
             <p class="contacts__text">Звоните:<br>
               <a class="contacts__link" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </p>
-          </div>
-          <div class="contacts__item">
+          </li>
+          <li class="contacts__item">
             <p class="contacts__text">
               Приезжайте в гости:
             </p>
             <p class="contacts__paragraph">
               ул. Большая Конюшенная, 19/8
             </p>
-          </div>
-          <div class="contacts__item">
+          </li>
+          <li class="contacts__item">
             <p class="contacts__feedback">Пишите:<br>
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="contacts__map">
           <!-- <iframe src="" frameborder="0"></iframe> -->
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <a class="footer__link" href="index.html">
-          <img class="footer__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'"/>
-        </a>
-      </div>
+      <a class="logo footer__logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+      </a>
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img src="css/twitter.svg" alt="Социальная сеть 'Твиттер'" class="socials__img">
+              <img class="socials__img" src="img/twitter.svg" alt="Социальная сеть 'Твиттер'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img src="css/facebook.svg" alt="Социальная сеть 'Фейсбук'" class="socials__img">
+              <img class="socials__img" src="img/facebook.svg" alt="Социальная сеть 'Фейсбук'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img src="css/google_play.svg" alt="Социальная сеть 'Гуглплей'" class="socials__img">
+              <img class="socials__img" src="img/google-play.svg" alt="Социальная сеть 'Гуглплей'">
             </a>
           </li>
         </ul>
