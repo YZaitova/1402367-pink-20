@@ -9,7 +9,7 @@
     <header class="header">
       <nav class="header__nav">
         <a class="logo header__logo" href="index.html">
-          <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+          <img class="logo__img" src="img/logo-pink-white-desktop.svg" alt="Логотип сайта 'Пинк'">
         </a>
         <!-- <button class="header__navigation-toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -26,18 +26,18 @@
         <a class="promo__btn" href="#">Скачать приложение</a>
         <ul class="promo__list">
           <li class="promo__item">
-            <a href="" class="promo__link">
-              <img class="promo__img" src="img/apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
+            <a href="#" class="promo__link">
+              <img class="promo__img promo__img--apple" src="img/logo-apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
             </a>
           </li>
           <li class="promo__item">
             <a href="#" class="promo__link">
-              <img src="img/android.svg" alt="Скачивание на Android" class="promo__img">
+              <img class="promo__img promo__img--android" src="img/logo-android.svg" alt="Скачивание на Android" class="promo__img">
             </a>
           </li>
           <li class="promo__item">
             <a href="#" class="promo__link">
-              <img src="img/windows.svg" alt="Скачивание на Windows" class="promo__img">
+              <img class="promo__img promo__img--windows" src="img/logo-microsoft.svg" alt="Скачивание на Windows" class="promo__img">
             </a>
           </li>
         </ul>
@@ -50,21 +50,21 @@
         <h2 class="benefits__text">Устали от серости мегаполиса?</h2>
         <h3 class="benefits__text">Нам есть, что вам предложить!</h3>
         <ul class="benefits__list">
-          <li class="benefits__item">
-            <h4 class="benefits__heading">Поднимает настроение</h4>
-            <p class="benefits__paragraph">
+          <li class="benefits__item benefits__item--mood">
+            <h4 class="benefits__heading benefits__heading--mood">Поднимает настроение</h4>
+            <p class="benefits__paragraph benefits__paragraph--mood">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
-          <li class="benefits__item">
-            <h4 class="benefits__heading">Меняет мир вокруг</h4>
-            <p class="benefits__paragraph">
+          <li class="benefits__item benefits__item--change">
+            <h4 class="benefits__heading benefits__heading--change">Меняет мир вокруг</h4>
+            <p class="benefits__paragraph benefits__paragraph--change">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
-          <li class="benefits__item">
-            <h4 class="benefits__heading">Заводит новых друзей</h4>
-            <p class="benefits__paragraph">
+          <li class="benefits__item benefits__item--friends">
+            <h4 class="benefits__heading benefits__heading--friends">Заводит новых друзей</h4>
+            <p class="benefits__paragraph benefits__paragraph--friends">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
@@ -98,27 +98,27 @@
       </section>
       <section class="rate">
         <h4 class="visually-hidden">Тарифы сайта 'Pink'</h4>
-        <table class="rate__table">
+        <table class="rate__table table">
           <tr>
             <th></th>
-            <th>База</th>
-            <th>Стандарт</th>
-            <th>Анлим</th>
+            <th class="table__heading">База</th>
+            <th class="table__heading">Стандарт</th>
+            <th class="table__heading">Анлим</th>
           </tr>
           <tr>
-            <td class="table__data">Розовый фильтр</td>
+            <td class="table__data table__text">Розовый фильтр</td>
             <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
             <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
             <td class="table__data table__img--tick" aria-label="Розовый фильтр включен в тариф"></td>
           </tr>
           <tr>
-            <td>Смайлики</td>
+            <td class="table__data table__text">Смайлики</td>
             <td class="table__data table__img--cross" aria-label="Смайлики не включены в тариф"></td>
             <td class="table__data table__img--tick" aria-label="Смайлики включены в тариф"></td>
             <td class="table__data table__img--tick" aria-label="Смайлики включены в тариф"></td>
           </tr>
           <tr>
-            <td>Комментарии</td>
+            <td class="table__data table__text">Комментарии</td>
             <td class="table__data table__img--cross" aria-label="Комментарии не включены в тариф"></td>
             <td class="table__data table__img--cross" aria-label="Комментарии не включены в тариф"></td>
             <td class="table__data table__img--tick" aria-label="Комментарии включены в тариф"></td>
@@ -143,7 +143,7 @@
             </p>
           </li>
           <li class="contacts__item">
-            <p class="contacts__feedback">Пишите:<br>
+            <p class="contacts__text">Пишите:<br>
               <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
           </li>
@@ -155,23 +155,23 @@
     </main>
     <footer class="footer">
       <a class="logo footer__logo" href="index.html">
-        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+        <img class="logo__img" src="img/logo-pink-blue-desktop.svg" alt="Логотип сайта 'Пинк'">
       </a>
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img class="socials__img" src="img/twitter.svg" alt="Социальная сеть 'Твиттер'">
+              <img class="socials__img" src="img/icon-twitter.svg" alt="Социальная сеть 'Твиттер'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img class="socials__img" src="img/facebook.svg" alt="Социальная сеть 'Фейсбук'">
+              <img class="socials__img" src="img/icon-facebook.svg" alt="Социальная сеть 'Фейсбук'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img class="socials__img" src="img/google-play.svg" alt="Социальная сеть 'Гуглплей'">
+              <img class="socials__img" src="img/icon-youtube.svg" alt="Социальная сеть 'Гуглплей'">
             </a>
           </li>
         </ul>
