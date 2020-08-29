@@ -1,0 +1,28 @@
+.contacts {
+  &__heading {
+    font-family: $font-stack-light;
+    font-size: $font-size-l;
+    line-height: auto;
+    color: $base-color-dark;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+  }
+  &__text {
+    font-family: $font-stack-bold;
+    font-size: $font-size-base;
+    line-height: auto;
+    color: $base-color-dark;
+  }
+  &__link,
+  &__paragraph {
+    font-family: $font-stack-light;
+    font-size: 24px;
+    line-height: auto;
+    color: $base-color-bright;
+  }
+  &__map {
+
+  }
+}

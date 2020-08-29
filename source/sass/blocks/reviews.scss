@@ -1,0 +1,36 @@
+.reviews {
+  position: relative;
+  &::before {
+    content: "";
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    background-image: url("../../img/icon-review-arrow-left.svg");
+  }
+  &::after {
+    content: "";
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    background-image: url("../../img/icon-review-arrow-right.svg");
+  }
+  &__text {
+    margin: 0;
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-dark;
+  }
+  &__author-name {
+    font-family: $font-stack-bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $base-color-black;
+  }
+  &__author-age {
+    font-family: $font-stack-bold;
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-dark;
+  }
+}

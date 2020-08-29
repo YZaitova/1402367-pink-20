@@ -2,3 +2,34 @@
   background-color: $base-color-light;
   //дописать, чтобы распределение шло по трапеции
 }
+.table__data {
+
+}
+.table {
+  &__heading {
+    color: $base-color-white;
+    font-family: $font-stack-bold;
+    font-size: $font-size-base;
+    line-height: 30px;
+    background-color: $base-color-dark;
+  }
+  &__data {
+    background-color: $base-color-white;
+  }
+  &__text {
+    color: $base-color-dark;
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 30px;
+  }
+}
+.table__img {
+  &--tick {
+    background-image: url("../../img/icon-yes.svg");
+    background-repeat: no-repeat;
+  }
+  &--cross {
+    background-image: url("../../img/icon-no.svg");
+    background-repeat: no-repeat;
+  }
+}

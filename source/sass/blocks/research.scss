@@ -1,3 +1,24 @@
 .research {
   background-color: $base-color-light;
+  background-image: url("../../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  &__heading {
+    font-family: $font-stack-bold;
+    font-size: $font-size-m;
+    line-height: 30px;
+    color: $base-color-black;
+  }
+  &__text {
+    margin: 0;
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-dark;
+  }
+  &__link {
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-bright;
+  }
 }

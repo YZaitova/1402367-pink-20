@@ -1,0 +1,46 @@
+.promo {
+background-image: url(../../img/iphone-hand-desktop@1x.png);
+}
+.promo__heading {
+  font-family: $font-stack-light;
+  color: $base-color-white;
+  font-size: $font-size-l;
+  line-height: auto;
+  text-align: center;
+}
+.promo__btn {
+  font-family: $font-stack-bold;
+  color: $base-color-white;
+  font-size: $font-size-s;
+  line-height: 18px;
+  border: 3px solid $base-color-white;
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 20px 32px 20px 31px;
+}
+.promo__link {
+  text-decoration: none;
+  display: block;
+  width: 50px;
+  height: 60px;
+}
+.promo__img {
+  &--apple {
+    width: 47px;
+    height: 56px;
+  }
+  &--android {
+    width: 43px;
+    height: 47px;
+  }
+  &--windows {
+    width: 44px;
+    height: 41px;
+  }
+}
+.promo__text {
+  font-family: $font-stack-light;
+  color: $base-color-white;
+  font-size: $font-size-base;
+  line-height: 24px;
+}
