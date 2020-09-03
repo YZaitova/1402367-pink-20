@@ -1,0 +1,72 @@
+.form {
+  &__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-bright;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  &--checkbox {
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-dark;
+    text-transform: none;
+  }
+  &--radio {
+    margin-bottom: 63px;
+    font-family: Open Sans;
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-dark;
+    text-transform: none;
+  }
+  }
+  &__wrap {
+    @include flex ();
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__text {
+    font-size: $font-size-base;
+    line-height: 30px;
+    color: $base-color-dark;
+    margin-left: 20px;
+    padding-top: 23px;
+    padding-left: 20px;
+    &::placeholder {
+      font-family: $font-stack;
+      font-size: $font-size-base;
+      line-height: 30px;
+    }
+  }
+  &__fieldset {
+    margin-bottom: 69px;
+    &--travel {
+      width: 45%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &--information {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+  &__legend {
+    font-size: 14px;
+    line-height: 30px;
+    color: $base-color-bright;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__text-tel,
+  &__text-mail {
+    width: 371px;
+  }
+  &__textarea {
+    width: 816px;
+    min-height: 124px;
+    margin: 44px 60px;
+  }
+}
