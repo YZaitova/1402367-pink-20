@@ -7,21 +7,23 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
-      </a>
-      <!-- <button class="header__navigation-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button> -->
-      <nav class="header__nav">
-        <a class="header__link" href="index.html">Главная</a>
-        <a class="header__link header__link--active" href="#">Фотографии</a>
-        <a class="header__link" href="form.html">Конкурс</a>
-        <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </nav>
-      <section class="promo">
-        <h2 class="promo__heading">
-          Фотографии пользователей
+      <div class="header__wrap">
+        <nav class="header__nav">
+          <a class="logo header__logo" href="index.html">
+            <img class="logo__img" src="img/logo-pink-white-desktop.svg" alt="Логотип сайта 'Пинк'">
+          </a>
+          <!-- <button class="header__navigation-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button> -->
+          <a class="header__link" href="index.html">Главная</a>
+          <a class="header__link header__link--active" href="#" >Фотографии</a>
+          <a class="header__link" href="form.html">Конкурс</a>
+          <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </nav>
+      </div>
+      <section class="promo promo--photo">
+        <h2 class="promo__heading promo__heading--photo">
+          Фотографии<br> пользователей
         </h2>
       </section>
     </header>
@@ -30,11 +32,11 @@
         <h3 class="panorama__heading">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </h3>
-        <img src="img/panorama.jpg" alt="Панорама"/>
+        <img class="panorama__photo" src="img/panorama-desktop@1x.jpg" alt="Панорама"/>
         <a href="#" class="panorama__link">Панорама дня</a>
         <div class="panorama__comment">
           <div class="panorama__box">
-            <h4 class="panorama__heading">Анна<span class="photo__time">(5 минут назад)</span></h4>
+            <h4 class="panorama__head">Анна<span class="photo__time">(5 минут назад)</span></h4>
             <div class="panorama__like like">
               <p class="like__text">Нравится: 215</p>
               <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
@@ -46,16 +48,16 @@
       <section class="photos">
         <h3 class="visually-hidden">Фотографии пользователей</h3>
         <article class="photo">
-          <img class="photo__img" src="img/photo1.img" alt="Фото пользователя Левон">
+          <img class="photo__img" src="img/photo-car-desktop@1x.jpg" alt="Фото пользователя Левон">
           <h4 class="photo__heading">Левон<span class="photo__time">(5 часов назад)</span></h4>
           <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="photo__like like">
             <p class="like__text">Нравится: 356</p>
-            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии">1</a>
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo2.img" alt="Фото пользователя Антон">
+          <img class="photo__img" src="img/photo-drumset-desktop@1x.jpg" alt="Фото пользователя Антон">
           <h4 class="photo__heading">Антон<span class="photo__time">(12 часов назад)</span></h4>
           <p class="photo__text">Соседи будут рады!</p>
           <div class="photo__like like">
@@ -64,7 +66,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo3.img" alt="Фото пользователя Борис">
+          <img class="photo__img" src="img/photo-window-desktop@1x.jpg" alt="Фото пользователя Борис">
           <h4 class="photo__heading">Борис<span class="photo__time">(20 часов назад)</span></h4>
           <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="photo__like like">
@@ -73,7 +75,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo4.img" alt="Фото пользователя Сергей">
+          <img class="photo__img" src="img/photo-fair-desktop@1x.jpg" alt="Фото пользователя Сергей">
           <h4 class="photo__heading">Сергей<span class="photo__time">(25 часов назад)</span></h4>
           <p class="photo__text">Самая кубанская в мире!</p>
           <div class="photo__like like">
@@ -82,7 +84,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo5.img" alt="Фото пользователя Максим">
+          <img class="photo__img" src="img/photo-pov-desktop@1x.jpg" alt="Фото пользователя Максим">
           <h4 class="photo__heading">Максим<span class="photo__time">(40 часов назад)</span></h4>
           <p class="photo__text">Где снег-то?</p>
           <div class="photo__like like">
@@ -91,7 +93,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo6.img" alt="Фото пользователя Надежда">
+          <img class="photo__img" src="img/photo-wing-desktop@1x.jpg" alt="Фото пользователя Надежда">
           <h4 class="photo__heading">Надежда<span class="photo__time">(45 часов назад)</span></h4>
           <p class="photo__text">Всем GM и взаимные лайки!</p>
           <div class="photo__like like">
@@ -106,7 +108,7 @@
         </h3>
         <form class="treatment__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="treatment__label">
-            <img class="treatment__img" src="img/landscape.jpg" alt="Изображение, которое Вы обрабатываете"  width="300" height="400" />
+            <img class="treatment__img" src="img/photo-road-desktop@1x.jpg" alt="Изображение, которое Вы обрабатываете"  width="300" height="400" />
             <input type="file">
           </label>
           <div class="treatment__filters">
@@ -131,23 +133,23 @@
     </main>
     <footer class="footer">
       <a class="logo footer__logo" href="index.html">
-        <img class="logo__img" src="img/logo.svg" alt="Логотип сайта 'Пинк'">
+        <img class="logo__img" src="img/logo-pink-blue-desktop.svg" alt="Логотип сайта 'Пинк'">
       </a>
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img class="socials__img" src="img/twitter.svg" alt="Социальная сеть 'Твиттер'">
+              <img class="socials__img" src="img/icon-twitter.svg" alt="Социальная сеть 'Твиттер'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img class="socials__img" src="img/facebook.svg" alt="Социальная сеть 'Фейсбук'">
+              <img class="socials__img" src="img/icon-facebook.svg" alt="Социальная сеть 'Фейсбук'">
             </a>
           </li>
           <li class="socials__item">
             <a href="" class="socials__link">
-              <img class="socials__img" src="img/google-play.svg" alt="Социальная сеть 'Гуглплей'">
+              <img class="socials__img" src="img/icon-youtube.svg" alt="Социальная сеть 'Гуглплей'">
             </a>
           </li>
         </ul>
