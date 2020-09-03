@@ -1,12 +1,22 @@
 .research {
   background-color: $base-color-light;
-  background-image: url("../../img/icon-timer.svg");
-  background-repeat: no-repeat;
+  // background-color: red;
+  &__wrap {
+    @include centered-desk ();
+    background-image: url("../../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 7px;
+    padding-left: 380px;
+    padding-bottom: 110px;
+  }
   &__heading {
+    margin: 0;
     font-family: $font-stack-bold;
     font-size: $font-size-m;
     line-height: 30px;
     color: $base-color-black;
+    padding-top: 102px
   }
   &__text {
     margin: 0;
@@ -14,11 +24,15 @@
     font-size: $font-size-base;
     line-height: 30px;
     color: $base-color-dark;
+    padding-top: 27px;
   }
   &__link {
     font-family: $font-stack;
     font-size: $font-size-base;
     line-height: 30px;
     color: $base-color-bright;
+    width: 60%;
+    display: block;
+    padding-top: 30px;
   }
 }

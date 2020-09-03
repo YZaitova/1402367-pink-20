@@ -1,24 +1,30 @@
 .benefits {
-  background-color: $base-color-white;
-  height: 955px;
-}
-.benefits {
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-color: $base-color-light;
+  padding-top: 60px;
+  // background-color: blue;
+  padding-bottom: 59px;
+  &__wrap,
+  &__list {
+    @include centered-desk();
+  }
   &__text {
+    margin: 0;
+    padding: 0;
     font-family: $font-stack-light;
     font-size: $font-size-l;
     line-height: auto;
     color: $base-color-dark;
-    margin-top: 77px;
+    font-weight: 300;
+    text-align: center;
   }
   &__list {
     list-style: none;
     margin: 0;
-    height: 715px;
     display: flex;
     align-items: center;
-    background-color: $base-color-light;
-    background-image: url("../../img/bg-triangle-white.svg");
-    background-repeat: no-repeat;
+    margin-top: 72px;
   }
   &__heading {
     margin: 0;
@@ -26,21 +32,22 @@
     font-size: $font-size-m;
     line-height: 30px;
     color: $base-color-black;
+    margin-top: 340px;
   }
   &__paragraph {
     margin: 0;
+    padding: 0;
     font-family: $font-stack;
     font-size: $font-size-base;
     line-height: 30px;
     color: $base-color-dark;
+    margin-top: 25px;
+    width: 252px;
   }
 }
 .benefits__item {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 6px;
+  @include flex ();
+  text-align: center;
   &--mood {
     background-image: url(../../img/iphone-screen-1-desktop@1x.png);
     background-repeat: no-repeat;

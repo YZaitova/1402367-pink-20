@@ -1,18 +1,33 @@
 .reviews {
-  position: relative;
-  &::before {
-    content: "";
-    width: 22px;
-    height: 41px;
-    position: absolute;
-    background-image: url("../../img/icon-review-arrow-left.svg");
+  @include centered-desk ();
+  background-image: url("../../img/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 58px;
+  &__list {
+    position: relative;
+    &::before {
+      content: "";
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      top: 50%;
+      background-image: url("../../img/icon-review-arrow-left.svg");
+    }
+    &::after {
+      content: "";
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      background-image: url("../../img/icon-review-arrow-right.svg");
+    }
   }
-  &::after {
-    content: "";
-    width: 22px;
-    height: 41px;
-    position: absolute;
-    background-image: url("../../img/icon-review-arrow-right.svg");
+  &__item {
+    padding-top: 170px;
+    padding-left: center;
+    text-align: center;
   }
   &__text {
     margin: 0;
@@ -26,11 +41,16 @@
     font-size: 24px;
     line-height: 30px;
     color: $base-color-black;
+    font-style: normal;
+    display: block;
+    margin-top: 35px;
   }
   &__author-age {
-    font-family: $font-stack-bold;
+    margin: 0;
+    font-family: $font-stack;
     font-size: $font-size-base;
     line-height: 30px;
     color: $base-color-dark;
+    margin-top: 2px;
   }
 }

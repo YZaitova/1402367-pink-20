@@ -1,0 +1,41 @@
+.photos {
+  @include centered-desk ();
+  @include flex ();
+}
+.photo {
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-color-dark;
+  background-color: $base-color-light;
+  width: 300px;
+  margin-top: 50px;
+  &__img {
+    display: block;
+    background-color: $base-color-white;
+  }
+  &__heading {
+    margin: 0;
+    font-family: $font-stack-bold;
+  }
+  &__time {
+    font-family: $font-stack-light;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  &__text {
+    font-family: $font-stack;
+  }
+}
+.like {
+  @include flex ();
+  &__text {
+    font-family: $font-stack;
+    font-size: 14px;
+    line-height: 24px;
+    color: $base-color-bright;
+  }
+  &__link {
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
+}

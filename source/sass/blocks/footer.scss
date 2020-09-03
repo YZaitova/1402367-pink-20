@@ -1,12 +1,14 @@
 .footer {
-  &__logo {
-
-  }
+  @include flex ();
+  @include centered-desk ();
 }
 .socials {
+  padding-top: 75px;
   &__list {
     list-style: none;
     margin: 0;
+    @include flex ();
+    justify-content: center;
   }
 }
 .developers {
@@ -21,4 +23,7 @@
     width: 27px;
     height: 34px;
   }
+}
+.developers__img svg {
+  fill: $base-color-bright;
 }
