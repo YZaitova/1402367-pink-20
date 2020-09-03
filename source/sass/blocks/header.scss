@@ -1,0 +1,26 @@
+.header {
+  background-image: url("../../img/bg-back-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  &__wrap {
+    background-color: rgba($color: $base-color-black, $alpha: 0.3);
+  }
+  &__nav {
+    max-width: 960px;
+    @include centered-desk ();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__link {
+    text-decoration: none;
+    color: $base-color-white;
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 18px;
+    padding-top: 25px;
+  }
+  &__logo{
+    padding-top: 28px;
+  }
+}

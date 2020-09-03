@@ -1,0 +1,29 @@
+.footer {
+  @include flex ();
+  @include centered-desk ();
+}
+.socials {
+  padding-top: 75px;
+  &__list {
+    list-style: none;
+    margin: 0;
+    @include flex ();
+    justify-content: center;
+  }
+}
+.developers {
+  &__text {
+    font-family: $font-stack;
+    font-size: $font-size-base;
+    line-height: 18px;
+    color: $base-color-dark;
+    text-decoration: none;
+  }
+  &__img {
+    width: 27px;
+    height: 34px;
+  }
+}
+.developers__img svg {
+  fill: $base-color-bright;
+}
