@@ -3,61 +3,68 @@
   background-repeat: no-repeat;
   background-color: $base-color-light;
   padding-top: 60px;
-  // background-color: blue;
   padding-bottom: 59px;
-  &__wrap,
-  &__list {
-    @include centered-desk();
-  }
-  &__text {
-    margin: 0;
-    padding: 0;
-    font-family: $font-stack-light;
-    font-size: $font-size-l;
-    line-height: auto;
-    color: $base-color-dark;
-    font-weight: 300;
-    text-align: center;
-  }
-  &__list {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    margin-top: 72px;
-  }
-  &__heading {
-    margin: 0;
-    font-family: $font-stack-bold;
-    font-size: $font-size-m;
-    line-height: 30px;
-    color: $base-color-black;
-    margin-top: 340px;
-  }
-  &__paragraph {
-    margin: 0;
-    padding: 0;
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    line-height: 30px;
-    color: $base-color-dark;
-    margin-top: 25px;
-    width: 252px;
-  }
 }
-.benefits__item {
-  @include flex ();
+
+.benefits__wrap,
+.benefits__list {
+  @include centered-desk();
+}
+
+.benefits__text {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack-light;
+  font-size: $font-size-l;
+  line-height: auto;
+  color: $base-color-dark;
+  font-weight: 300;
   text-align: center;
+}
+
+.benefits__list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.benefits__heading {
+  margin: 0;
+  font-family: $font-stack-bold;
+  font-size: $font-size-m;
+  line-height: 30px;
+  color: $base-color-black;
+  margin-top: 340px;
+}
+
+.benefits__paragraph {
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  color: $base-color-dark;
+  margin-top: 25px;
+  width: 252px;
+}
+
+.benefits__item {
+  text-align: center;
+
   &--mood {
-    background-image: url(../../img/iphone-screen-1-desktop@1x.png);
+    background-image: url("../img/iphone-screen-1-mobile@1x.png");
     background-repeat: no-repeat;
   }
+
   &--change {
-    background-image: url(../../img/iphone-screen-2-desktop@1x.png);
+    background-image: url("../img/iphone-screen-2-mobile@1x.png");
     background-repeat: no-repeat;
   }
+
   &--friends {
-    background-image: url(../../img/iphone-screen-3-desktop@1x.png);
+    background-image: url("../img/iphone-screen-3-mobile@1x.png");
     background-repeat: no-repeat;
   }
 }

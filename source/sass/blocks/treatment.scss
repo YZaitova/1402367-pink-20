@@ -1,21 +1,18 @@
 .treatment {
   @include centered-desk ();
-  &__form {
-    @include flex ();
-  }
-  &__label {
-    width: 300px;
-  }
-  &__heading {
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    color: $base-color-dark;
-    line-height: 30px;
-  }
-
 }
-.filter {
-  &__list {
-    width: 460px;
-  }
+
+.treatment__form {
+  @include flex ();
+}
+
+.treatment__label {
+  width: 300px;
+}
+
+.treatment__heading {
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  color: $base-color-dark;
+  line-height: 30px;
 }

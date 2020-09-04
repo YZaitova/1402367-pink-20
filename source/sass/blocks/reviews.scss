@@ -4,53 +4,60 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 58px;
-  &__list {
-    position: relative;
-    &::before {
-      content: "";
-      width: 22px;
-      height: 41px;
-      position: absolute;
-      top: 50%;
-      background-image: url("../../img/icon-review-arrow-left.svg");
-    }
-    &::after {
-      content: "";
-      width: 22px;
-      height: 41px;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      background-image: url("../../img/icon-review-arrow-right.svg");
-    }
+}
+
+.reviews__list {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    top: 50%;
+    background-image: url("../../img/icon-review-arrow-left.svg");
   }
-  &__item {
-    padding-top: 170px;
-    padding-left: center;
-    text-align: center;
+
+  &::after {
+    content: "";
+    width: 22px;
+    height: 41px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-image: url("../../img/icon-review-arrow-right.svg");
   }
-  &__text {
-    margin: 0;
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    line-height: 30px;
-    color: $base-color-dark;
-  }
-  &__author-name {
-    font-family: $font-stack-bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: $base-color-black;
-    font-style: normal;
-    display: block;
-    margin-top: 35px;
-  }
-  &__author-age {
-    margin: 0;
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    line-height: 30px;
-    color: $base-color-dark;
-    margin-top: 2px;
-  }
+}
+
+.reviews__item {
+  padding-top: 170px;
+  padding-left: center;
+  text-align: center;
+}
+
+.reviews__text {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  color: $base-color-dark;
+}
+
+.reviews__author-name {
+  font-family: $font-stack-bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: $base-color-black;
+  font-style: normal;
+  display: block;
+  margin-top: 35px;
+}
+
+.reviews__author-age {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  color: $base-color-dark;
+  margin-top: 2px;
 }

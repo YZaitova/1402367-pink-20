@@ -1,10 +1,4 @@
 .form {
-  &__label {
-  font-size: 14px;
-  line-height: 30px;
-  color: $base-color-bright;
-  text-transform: uppercase;
-  margin-bottom: 40px;
   &--checkbox {
     font-family: $font-stack;
     font-size: $font-size-base;
@@ -12,61 +6,78 @@
     color: $base-color-dark;
     text-transform: none;
   }
+
   &--radio {
     margin-bottom: 63px;
-    font-family: Open Sans;
+    font-family: $font-stack;
     font-size: $font-size-base;
     line-height: 30px;
     color: $base-color-dark;
     text-transform: none;
   }
-  }
-  &__wrap {
-    @include flex ();
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  &__text {
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-bright;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.form__wrap {
+  @include flex ();
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form__text {
+  font-size: $font-size-base;
+  line-height: 30px;
+  color: $base-color-dark;
+  margin-left: 20px;
+  padding-top: 23px;
+  padding-left: 20px;
+
+  &::placeholder {
+    font-family: $font-stack;
     font-size: $font-size-base;
     line-height: 30px;
-    color: $base-color-dark;
-    margin-left: 20px;
-    padding-top: 23px;
-    padding-left: 20px;
-    &::placeholder {
-      font-family: $font-stack;
-      font-size: $font-size-base;
-      line-height: 30px;
-    }
   }
-  &__fieldset {
-    margin-bottom: 69px;
-    &--travel {
-      width: 45%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    &--information {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
+}
+
+.form__fieldset {
+  margin-bottom: 69px;
+
+  &--travel {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
   }
-  &__legend {
-    font-size: 14px;
-    line-height: 30px;
-    color: $base-color-bright;
-    text-transform: uppercase;
-    text-align: center;
+
+  &--information {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  &__text-tel,
-  &__text-mail {
-    width: 371px;
-  }
-  &__textarea {
-    width: 816px;
-    min-height: 124px;
-    margin: 44px 60px;
-  }
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-bright;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__text-tel,
+.form__text-mail {
+  width: 371px;
+}
+
+.form__textarea {
+  width: 816px;
+  min-height: 124px;
+  margin: 44px 60px;
 }

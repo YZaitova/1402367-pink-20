@@ -1,51 +1,55 @@
-.contacts {
-  &__wrap {
-    @include centered-desk ();
-  }
-  &__heading {
-    margin: 0;
-    font-family: $font-stack-light;
-    font-size: $font-size-l;
-    line-height: auto;
-    color: $base-color-dark;
-    text-align: center;
-  }
-  &__list {
-    list-style: none;
-    margin: 0;
-    @include flex ();
-  }
-  &__item {
-    text-align: center;
-    margin-top: 45px;
-  }
-  &__text {
-    margin: 0;
-    font-family: $font-stack-bold;
-    font-size: $font-size-base;
-    line-height: auto;
-    color: $base-color-dark;
-  }
-  &__link {
-    display: block;
-  }
-  &__paragraph {
-    margin: 0;
-  }
-  &__link,
-  &__paragraph {
-    font-family: $font-stack-light;
-    font-size: 24px;
-    line-height: auto;
-    color: $base-color-bright;
-    margin-top: 24px;
-  }
-  &__map {
-    height: 502px;
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-  }
-  //вставить треугольник!!
+.contacts__wrap {
+  @include centered-desk ();
+}
+
+.contacts__heading {
+  margin: 0;
+  font-family: $font-stack-light;
+  font-size: $font-size-l;
+  line-height: auto;
+  color: $base-color-dark;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+}
+
+.contacts__item {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.contacts__text {
+  margin: 0;
+  font-family: $font-stack-bold;
+  font-size: $font-size-base;
+  line-height: auto;
+  color: $base-color-dark;
+}
+
+.contacts__link {
+  display: block;
+}
+
+.contacts__paragraph {
+  margin: 0;
+}
+
+.contacts__link,
+.contacts__paragraph {
+  font-family: $font-stack-light;
+  font-size: 24px;
+  line-height: auto;
+  color: $base-color-bright;
+  margin-top: 24px;
+}
+
+.contacts__map {
+  height: 502px;
+  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
