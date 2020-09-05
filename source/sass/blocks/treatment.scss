@@ -1,9 +1,9 @@
 .treatment {
-  @include centered-desk ();
+  @include centered-mobile ();
 }
 
 .treatment__form {
-  @include flex ();
+  display: flex;
 }
 
 .treatment__label {

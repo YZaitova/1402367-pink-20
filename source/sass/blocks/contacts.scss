@@ -1,10 +1,10 @@
 .contacts__wrap {
-  @include centered-desk ();
+  @include centered-mobile ();
 }
 
 .contacts__heading {
   margin: 0;
-  font-family: $font-stack-light;
+  font-family: $font-stack;
   font-size: $font-size-l;
   line-height: auto;
   color: $base-color-dark;
@@ -23,7 +23,7 @@
 
 .contacts__text {
   margin: 0;
-  font-family: $font-stack-bold;
+  font-family: $font-stack;
   font-size: $font-size-base;
   line-height: auto;
   color: $base-color-dark;
@@ -39,7 +39,7 @@
 
 .contacts__link,
 .contacts__paragraph {
-  font-family: $font-stack-light;
+  font-family: $font-stack;
   font-size: 24px;
   line-height: auto;
   color: $base-color-bright;
@@ -48,7 +48,7 @@
 
 .contacts__map {
   height: 502px;
-  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;

@@ -1,6 +1,7 @@
 .footer {
-  @include flex ();
-  @include centered-desk ();
+  display: flex;
+
+  @include centered-mobile ();
 }
 
 .socials {

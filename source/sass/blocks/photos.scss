@@ -1,5 +1,5 @@
 .photos {
-  @include centered-desk ();
+  @include centered-mobile ();
 }
 
 .photo {
@@ -18,11 +18,11 @@
 
 .photo__heading {
   margin: 0;
-  font-family: $font-stack-bold;
+  font-family: $font-stack;
 }
 
 .photo__time {
-  font-family: $font-stack-light;
+  font-family: $font-stack;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -39,6 +39,6 @@
 }
 
 .like__link {
-  background-image: url("../../img/icon-heart.svg");
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
 }

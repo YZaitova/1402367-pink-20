@@ -20,7 +20,7 @@
 
 .panorama__link {
   display: block;
-  font-family: $font-stack-bold;
+  font-family: $font-stack;
   font-size: 12px;
   line-height: 24px;
   color: $base-color-white;
@@ -34,7 +34,7 @@
 }
 
 .panorama__comment {
-  @include centered-desk ();
+  @include centered-mobile ();
   background-color: $base-color-light;
   padding-bottom: 31px;
 }

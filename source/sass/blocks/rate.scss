@@ -1,6 +1,6 @@
 .rate {
   background-color: $base-color-light;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   padding-top: 172px;
   padding-bottom: 98px;
@@ -8,7 +8,7 @@
 }
 
 .table {
-  @include centered-desk ();
+  @include centered-mobile ();
   width: 100%;
   border-collapse: collapse;
 }
@@ -16,7 +16,7 @@
 .table__heading {
   color: $base-color-white;
   text-transform: uppercase;
-  font-family: $font-stack-bold;
+  font-family: $font-stack;
   font-size: $font-size-base;
   line-height: 30px;
   background-color: $base-color-dark;
@@ -42,7 +42,7 @@
 }
 
 .table__price {
-  font-family: $font-stack-light;
+  font-family: $font-stack;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -50,14 +50,14 @@
 
 .table__img {
   &--tick {
-    background-image: url("../../img/icon-yes.svg");
+    background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 30px;
   }
 
   &--cross {
-    background-image: url("../../img/icon-no.svg");
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }

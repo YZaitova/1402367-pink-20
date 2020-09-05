@@ -1,6 +1,6 @@
 .reviews {
-  @include centered-desk ();
-  background-image: url("../../img/icon-quotes.svg");
+  @include centered-mobile ();
+  background-image: url("../img/icon-quotes.svg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: 58px;
@@ -15,7 +15,7 @@
     height: 41px;
     position: absolute;
     top: 50%;
-    background-image: url("../../img/icon-review-arrow-left.svg");
+    background-image: url("../img/icon-review-arrow-left.svg");
   }
 
   &::after {
@@ -25,7 +25,7 @@
     position: absolute;
     right: 0;
     top: 50%;
-    background-image: url("../../img/icon-review-arrow-right.svg");
+    background-image: url("../img/icon-review-arrow-right.svg");
   }
 }
 
@@ -44,7 +44,7 @@
 }
 
 .reviews__author-name {
-  font-family: $font-stack-bold;
+  font-family: $font-stack;
   font-size: 24px;
   line-height: 30px;
   color: $base-color-black;
