@@ -11,6 +11,7 @@ $base-color-bright: #d22856;
 $base-color-black: #000000;
 $btn-color-green: #2aab6d;
 $table-border-color: #e5e5e5;
+$bg-color-dark: #1d2631;
 //fonts variables
 $font-stack: ("Open Sans", "Arial", sans-serif);
 $font-size-base: 18px;
@@ -18,31 +19,49 @@ $font-size-s: 21px;
 $font-size-m: 30px;
 $font-size-l: 50px;
 
+$width-desk: 1200px;
+$width-tabl: 660px;
+$width-mobile-only: 659px;
+
 @mixin centered-desk () {
-  max-width: 960px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-@mixin centered-tabl () {
-  max-width: 640px;
+@mixin container-desk () {
+  width: 960px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@mixin centered-table () {
+  max-width: 660px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 10px;
 }
 
-@mixin centered-mob () {
-  max-width: 280px;
-  margin: 0 auto;
+@mixin container-table () {
+  width: 620px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin centered-mobile () {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin container-mobile () {
+  width: 280px;
   padding-left: 10px;
   padding-right: 10px;
 }
 /* important здесь используется, чтобы срабатывал visually-hidden для элементов
 с любыми заданными параметрами, ниже в коде или с более приоретными свойствами*/
 .visually-hidden {
-  // position: absolute !important;
+  position: absolute;
   height: 1px;
   width: 1px;
   overflow: hidden;
