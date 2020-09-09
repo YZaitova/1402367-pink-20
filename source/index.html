@@ -2,49 +2,52 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <div class="header__wrap">
-        <nav class="header__nav">
-          <a class="logo header__logo" href="index.html">
-            <img class="logo__img" src="img/logo-pink-white-desktop.svg" alt="Логотип сайта 'Пинк'">
-          </a>
-          <!-- <button class="header__navigation-toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button> -->
-          <a class="header__link header__link--active" href="#">Главная</a>
-          <a class="header__link" href="photo.html" >Фотографии</a>
-          <a class="header__link" href="form.html">Конкурс</a>
-          <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </nav>
-      </div>
+      <a class="logo header__logo" href="index.html">
+        <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
+      </a>
+      <button class="header__navigation-toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="header__nav">
+        <a class="header__link header__link--active" href="#">Главная</a>
+        <a class="header__link" href="photo.html" >Фотографии</a>
+        <a class="header__link" href="form.html">Конкурс</a>
+        <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </nav>
       <section class="promo promo--index">
         <div class="promo__wrap">
-          <h2 class="promo__heading promo__heading--index">
-            Взгляните<br> на жизнь<br> иначе!
-          </h2>
-          <a class="promo__btn" href="#">Скачать приложение</a>
-          <ul class="promo__list">
-            <li class="promo__item">
-              <a href="#" class="promo__link">
-                <img class="promo__img promo__img--apple" src="img/logo-apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
-              </a>
-            </li>
-            <li class="promo__item">
-              <a href="#" class="promo__link">
-                <img class="promo__img promo__img--android" src="img/logo-android.svg" alt="Скачивание на Android" class="promo__img">
-              </a>
-            </li>
-            <li class="promo__item">
-              <a href="#" class="promo__link">
-                <img class="promo__img promo__img--windows" src="img/logo-microsoft.svg" alt="Скачивание на Windows" class="promo__img">
-              </a>
-            </li>
-          </ul>
-          <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="promo__head-wrap">
+            <h2 class="promo__heading promo__heading--index">
+              Взгляните на жизнь иначе!
+            </h2>
+          </div>
+          <div class="promo__download">
+            <a class="promo__btn" href="#">Скачать приложение</a>
+            <ul class="promo__list">
+              <li class="promo__item">
+                <a href="#" class="promo__link">
+                  <img class="promo__img promo__img--apple" src="img/logo-apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
+                </a>
+              </li>
+              <li class="promo__item">
+                <a href="#" class="promo__link">
+                  <img class="promo__img promo__img--android" src="img/logo-android.svg" alt="Скачивание на Android" class="promo__img">
+                </a>
+              </li>
+              <li class="promo__item">
+                <a href="#" class="promo__link">
+                  <img class="promo__img promo__img--windows" src="img/logo-microsoft.svg" alt="Скачивание на Windows" class="promo__img">
+                </a>
+              </li>
+            </ul>
+            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
     </header>
@@ -53,7 +56,7 @@
       <section class="benefits">
         <div class="benefits__wrap">
           <h2 class="benefits__text">Устали от серости мегаполиса?</h2>
-          <h3 class="benefits__text">Нам есть, что вам<br> предложить!</h3>
+          <h3 class="benefits__text">Нам есть, что вам предложить!</h3>
           <ul class="benefits__list">
             <li class="benefits__item benefits__item--mood">
               <h4 class="benefits__heading benefits__heading--mood">Поднимает настроение</h4>
@@ -76,7 +79,7 @@
           </ul>
         </div>
       </section>
-      <section class="research">
+      <section class="research research--hide">
         <div class="research__wrap">
           <h4 class="research__heading">Эффект на 24 часа!</h4>
           <p class="research__text">
@@ -95,12 +98,12 @@
               комментариях к выложенной фотографии!
             </p>
             <cite class="reviews__author-name">Николай Петров</cite>
-            <p class="reviews__author-age">25 лет, водитель трамвая</p>
+            <p class="reviews__author-age reviews-hide">25 лет, водитель трамвая</p>
           </blockquote>
-          <p class="reviews__toggles slider__toggles visually-hidden">
-            <a class="slider__toggle slider__toggle--current" href="#">1</a>
-            <a class="slider__toggle" href="#">2</a>
-            <a class="slider__toggle" href="#">3</a>
+          <p class="reviews__toggles slider__toggles">
+            <a class="slider__toggle" href="#" aria-label="1"></a>
+            <a class="slider__toggle slider__toggle--current" href="#" aria-label="2"></a>
+            <a class="slider__toggle" href="#" aria-label="3"></a>
           </p>
         </div>
       </section>
@@ -158,13 +161,14 @@
           </ul>
         </div>
         <div class="contacts__map">
+          <span class="contacts__map-decor"></span>
           <!-- <iframe src="" frameborder="0"></iframe> -->
         </div>
       </section>
     </main>
     <footer class="footer">
       <a class="logo footer__logo" href="index.html">
-        <img class="logo__img" src="img/logo-pink-blue-desktop.svg" alt="Логотип сайта 'Пинк'">
+        <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
       </a>
       <div class="socials">
         <ul class="socials__list">

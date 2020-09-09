@@ -1,0 +1,33 @@
+.filter__range {
+  appearance: none;
+  height: 2px;
+  background-color: $base-color-dark;
+  //background: #FFFFFF;
+  //border: 2px solid #D22856;
+  //box-sizing: border-box;
+}
+
+.filter__btn {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: $font-size-base;
+  font-weight: 700;
+  line-height: 18px;
+  border: none;
+  background-color: $base-color-white;
+  border-radius: 30px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: 100%;
+
+  &--submit {
+    color: $base-color-bright;
+    border: 3px solid $base-color-bright;
+  }
+
+  &--reset {
+    color: $base-color-dark;
+    opacity: 0.1;
+    border: 3px solid  $base-color-dark;
+  }
+}

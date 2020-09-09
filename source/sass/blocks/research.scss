@@ -1,38 +1,50 @@
 .research {
   background-color: $base-color-light;
   // background-color: red;
-  &__wrap {
-    @include centered-desk ();
-    background-image: url("../../img/icon-timer.svg");
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: 7px;
-    padding-left: 380px;
-    padding-bottom: 110px;
-  }
-  &__heading {
-    margin: 0;
-    font-family: $font-stack-bold;
-    font-size: $font-size-m;
-    line-height: 30px;
-    color: $base-color-black;
-    padding-top: 102px
-  }
-  &__text {
-    margin: 0;
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    line-height: 30px;
-    color: $base-color-dark;
-    padding-top: 27px;
-  }
-  &__link {
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    line-height: 30px;
-    color: $base-color-bright;
-    width: 60%;
-    display: block;
-    padding-top: 30px;
-  }
+}
+
+.research__wrap {
+  @include centered-mobile ();
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 7px;
+  padding-left: 380px;
+  padding-bottom: 110px;
+}
+
+.research__heading {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-m;
+  line-height: 30px;
+  color: $base-color-black;
+  padding-top: 102px;
+}
+
+.research__text {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  color: $base-color-dark;
+  padding-top: 27px;
+}
+
+.research__link {
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  color: $base-color-bright;
+  width: 60%;
+  display: block;
+  padding-top: 30px;
+}
+
+.research--hide {
+  display: none;
+
+  // @media (min-width:$width-tabl) {
+  //   display: block;
+  // }
 }

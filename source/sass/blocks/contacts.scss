@@ -1,51 +1,83 @@
-.contacts {
-  &__wrap {
-    @include centered-desk ();
-  }
-  &__heading {
-    margin: 0;
-    font-family: $font-stack-light;
-    font-size: $font-size-l;
-    line-height: auto;
-    color: $base-color-dark;
-    text-align: center;
-  }
-  &__list {
-    list-style: none;
-    margin: 0;
-    @include flex ();
-  }
-  &__item {
-    text-align: center;
-    margin-top: 45px;
-  }
-  &__text {
-    margin: 0;
-    font-family: $font-stack-bold;
-    font-size: $font-size-base;
-    line-height: auto;
-    color: $base-color-dark;
-  }
-  &__link {
-    display: block;
-  }
-  &__paragraph {
-    margin: 0;
-  }
-  &__link,
-  &__paragraph {
-    font-family: $font-stack-light;
-    font-size: 24px;
-    line-height: auto;
-    color: $base-color-bright;
-    margin-top: 24px;
-  }
-  &__map {
-    height: 502px;
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-  }
-  //вставить треугольник!!
+.contacts__wrap {
+  @include centered-mobile ();
+}
+
+.contacts__heading {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: 24px;
+  line-height: 120%;
+  color: $base-color-dark;
+  text-align: center;
+  font-weight: 300;
+}
+
+.contacts__list {
+  list-style: none;
+  margin: 0;
+}
+
+.contacts__item {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.contacts__text {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 25px;
+  color: $base-color-dark;
+  font-weight: 700;
+}
+
+.contacts__link {
+  display: block;
+}
+
+.contacts__paragraph {
+  margin: 0;
+}
+
+.contacts__link,
+.contacts__paragraph {
+  font-family: $font-stack;
+  font-size: 24px;
+  line-height: 33px;
+  color: $base-color-bright;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contacts__map {
+  @include centered-mobile ();
+  position: relative;
+  background-color: $base-color-light;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  min-height: 200px;
+
+  // @media (min-width: $width-tabl) {
+  //   @include centered-table ();
+  //   min-height: 375px;
+  // }
+
+  // @media (min-width: $width-desk) {
+  //   @include centered-desk ();
+  //   min-height: 500px;
+  // }
+  // &::before {
+
+  // }
+}
+
+.contacts__map-decor {
+  display: block;
+  height: 50px;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -30px;
 }

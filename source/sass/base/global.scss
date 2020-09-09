@@ -1,0 +1,13 @@
+body {
+  margin-top: 0;
+  font-family: $font-stack;
+  color: $base-color-dark;
+  font-size: $font-size-base;
+  line-height: 24px;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,7 +11,7 @@
       <div class="header__wrap">
         <nav class="header__nav">
           <a class="logo header__logo" href="index.html">
-            <img class="logo__img" src="img/logo-pink-white-desktop.svg" alt="Логотип сайта 'Пинк'">
+            <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
           </a>
           <!-- <button class="header__navigation-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -28,36 +29,30 @@
       </section>
     </header>
     <main>
-      <section class="panorama">
-        <h3 class="panorama__heading">Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
-        </h3>
-        <img class="panorama__photo" src="img/panorama-desktop@1x.jpg" alt="Панорама"/>
-        <a href="#" class="panorama__link">Панорама дня</a>
-        <div class="panorama__comment">
-          <div class="panorama__box">
-            <h4 class="panorama__head">Анна<span class="photo__time">(5 минут назад)</span></h4>
-            <div class="panorama__like like">
-              <p class="like__text">Нравится: 215</p>
-              <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
-            </div>
-          </div>
-          <p class="panorama__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        </div>
-      </section>
       <section class="photos">
-        <h3 class="visually-hidden">Фотографии пользователей</h3>
+        <h3 class="photos__heading">Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?</h3>
+        <div class="photo photo--panorama">
+          <img class="photo__img photo__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама">
+          <a href="#" class="photo__link">Панорама дня</a>
+          <h4 class="photo__heading">Анна<span class="photo__time">(5 минут назад)</span></h4>
+          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="photo__like like">
+            <p class="like__text">Нравится: 215</p>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
+          </div>
+        </div>
         <article class="photo">
-          <img class="photo__img" src="img/photo-car-desktop@1x.jpg" alt="Фото пользователя Левон">
+          <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя Левон">
           <h4 class="photo__heading">Левон<span class="photo__time">(5 часов назад)</span></h4>
           <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
           <div class="photo__like like">
             <p class="like__text">Нравится: 356</p>
-            <a class="like__link" href="#" aria-label="Поставить лайк фотографии">1</a>
+            <a class="like__link" href="#" aria-label="Поставить лайк фотографии"></a>
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo-drumset-desktop@1x.jpg" alt="Фото пользователя Антон">
+          <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя Антон">
           <h4 class="photo__heading">Антон<span class="photo__time">(12 часов назад)</span></h4>
           <p class="photo__text">Соседи будут рады!</p>
           <div class="photo__like like">
@@ -66,7 +61,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo-window-desktop@1x.jpg" alt="Фото пользователя Борис">
+          <img class="photo__img" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя Борис">
           <h4 class="photo__heading">Борис<span class="photo__time">(20 часов назад)</span></h4>
           <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
           <div class="photo__like like">
@@ -75,7 +70,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo-fair-desktop@1x.jpg" alt="Фото пользователя Сергей">
+          <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя Сергей">
           <h4 class="photo__heading">Сергей<span class="photo__time">(25 часов назад)</span></h4>
           <p class="photo__text">Самая кубанская в мире!</p>
           <div class="photo__like like">
@@ -84,7 +79,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo-pov-desktop@1x.jpg" alt="Фото пользователя Максим">
+          <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя Максим">
           <h4 class="photo__heading">Максим<span class="photo__time">(40 часов назад)</span></h4>
           <p class="photo__text">Где снег-то?</p>
           <div class="photo__like like">
@@ -93,7 +88,7 @@
           </div>
         </article>
         <article class="photo">
-          <img class="photo__img" src="img/photo-wing-desktop@1x.jpg" alt="Фото пользователя Надежда">
+          <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя Надежда">
           <h4 class="photo__heading">Надежда<span class="photo__time">(45 часов назад)</span></h4>
           <p class="photo__text">Всем GM и взаимные лайки!</p>
           <div class="photo__like like">
@@ -108,24 +103,24 @@
         </h3>
         <form class="treatment__form" action="https://echo.htmlacademy.ru" method="post">
           <label class="treatment__label">
-            <img class="treatment__img" src="img/photo-road-desktop@1x.jpg" alt="Изображение, которое Вы обрабатываете"  width="300" height="400" />
-            <input type="file">
+            <img class="treatment__img" src="img/photo-road-mobile@1x.jpg" alt="Изображение, которое Вы обрабатываете"  width="300" height="400" />
+            <input class="treatment__file" type="file">
           </label>
           <div class="treatment__filters">
-            <div class="filter__list">
+            <div class="treatment__filter filter__list">
               <label class="filter__label filter__label--crop" aria-label="Обрезать изображение">
-                <input class="input__range" type="range" name="crop">
+                <input class="filter__range" type="range" name="crop">
               </label>
               <label class="filter__label filter__label--fill" aria-label="Инструмент заливка">
-                <input class="input__range" type="range" name="fill" >
+                <input class="filter__range" type="range" name="fill" >
               </label>
               <label class="filter__label filter__label--contrast" aria-label="Изменить контрастность изображения">
-                <input class="input__range" type="range" name="contrast" >
+                <input class="filter__range" type="range" name="contrast" >
               </label>
             </div>
             <div class="filter__buttons">
-              <button type="submit">Запостить</button>
-              <button type="reset" disabled>Отмена</button>
+              <button class="filter__btn filter__btn--submit" type="submit">Запостить</button>
+              <button class="filter__btn filter__btn--reset" type="reset" disabled>Отмена</button>
             </div>
           </div>
         </form>
@@ -133,7 +128,7 @@
     </main>
     <footer class="footer">
       <a class="logo footer__logo" href="index.html">
-        <img class="logo__img" src="img/logo-pink-blue-desktop.svg" alt="Логотип сайта 'Пинк'">
+        <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
       </a>
       <div class="socials">
         <ul class="socials__list">

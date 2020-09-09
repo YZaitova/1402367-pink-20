@@ -1,41 +1,80 @@
 .photos {
-  @include centered-desk ();
-  @include flex ();
+  @include centered-mobile ();
+  background-color: $base-color-white;
 }
+
+.photos__heading {
+  @include container-mobile ();
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-dark;
+  text-align: center;
+  font-weight: 400;
+  padding: 32px 0 0 20px;
+}
+
 .photo {
+  position: relative;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   color: $base-color-dark;
   background-color: $base-color-light;
-  width: 300px;
-  margin-top: 50px;
-  &__img {
-    display: block;
-    background-color: $base-color-white;
+  margin-bottom: 20px;
+
+  &:not(:first-of-type) {
+    @include container-mobile ();
   }
-  &__heading {
-    margin: 0;
-    font-family: $font-stack-bold;
-  }
-  &__time {
-    font-family: $font-stack-light;
-    text-transform: uppercase;
-    font-weight: 300;
-  }
-  &__text {
-    font-family: $font-stack;
+
+  &--panorama {
+    margin-top: 50px;
   }
 }
-.like {
-  @include flex ();
-  &__text {
-    font-family: $font-stack;
-    font-size: 14px;
-    line-height: 24px;
-    color: $base-color-bright;
-  }
-  &__link {
-    background-image: url("../../img/icon-heart.svg");
-    background-repeat: no-repeat;
-  }
+
+.photo__img {
+  display: block;
+  background-color: $base-color-white;
+}
+
+.photo__link {
+  display: block;
+  font-family: $font-stack;
+  font-size: 12px;
+  line-height: 24px;
+  color: $base-color-white;
+  background-color: $base-color-bright;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 20px 5px 23px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.photo__heading {
+  margin: 0;
+  font-family: $font-stack;
+  padding-top: 17px;
+  padding-left: 37px;
+}
+
+.photo__time {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.like__text {
+  font-family: $font-stack;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  color: $base-color-bright;
+}
+
+.like__link {
+  display: block;
+  text-decoration: none;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
 }

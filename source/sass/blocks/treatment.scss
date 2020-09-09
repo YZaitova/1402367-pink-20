@@ -1,21 +1,23 @@
 .treatment {
-  @include centered-desk ();
-  &__form {
-    @include flex ();
-  }
-  &__label {
-    width: 300px;
-  }
-  &__heading {
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    color: $base-color-dark;
-    line-height: 30px;
-  }
-
+  @include centered-mobile ();
 }
-.filter {
-  &__list {
-    width: 460px;
-  }
+
+.treatment__heading {
+  @include container-mobile ();
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-dark;
+  text-align: center;
+  font-weight: 400;
+  padding: 32px 0 0 20px;
+}
+
+.treatment__form {
+  display: flex;
+  flex-direction: column;
+  background-color: $base-color-light;
+}
+
+.treatment__file {
+  display: none;
 }

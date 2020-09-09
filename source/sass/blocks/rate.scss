@@ -1,56 +1,62 @@
 .rate {
+  @include centered-mobile ();
   background-color: $base-color-light;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  padding-top: 172px;
   padding-bottom: 98px;
-  //дописать, чтобы распределение шло по трапеции
 }
+
 .table {
-  @include centered-desk ();
-  width: 100%;
+  @include centered-mobile ();
+  margin-top: 100px;
   border-collapse: collapse;
-  &__heading {
-    color: $base-color-white;
-    text-transform: uppercase;
-    font-family: $font-stack-bold;
-    font-size: $font-size-base;
-    line-height: 30px;
-    background-color: $base-color-dark;
-    padding-top: 15px;
-    padding-bottom: 25px;
-  }
-  &__data {
-    width: 25%;
-    background-color: $base-color-white;
-    border: 2px solid $table-border-color;
-    border-radius: 1px 0px 0px 0px;
-    padding-top: 10px;
-  }
-  &__text {
-    color: $base-color-dark;
-    font-family: $font-stack;
-    font-size: $font-size-base;
-    line-height: 30px;
-    padding-bottom: 23px;
-    padding-left: 18px;
-  }
-  &__price {
-    font-family: $font-stack-light;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 300;
-  }
 }
+
+.table__heading {
+  color: $base-color-white;
+  text-transform: uppercase;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  background-color: $base-color-dark;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+
+.table__data {
+  width: 100%;
+  background-color: $base-color-white;
+  border: 2px solid $table-border-color;
+  border-radius: 1px;
+  padding-top: 10px;
+}
+
+.table__text {
+  color: $base-color-dark;
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  line-height: 30px;
+  padding-bottom: 23px;
+  padding-left: 18px;
+}
+
+.table__price {
+  font-family: $font-stack;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
 .table__img {
   &--tick {
-    background-image: url("../../img/icon-yes.svg");
+    background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 30px;
   }
+
   &--cross {
-    background-image: url("../../img/icon-no.svg");
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
