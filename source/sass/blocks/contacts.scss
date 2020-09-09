@@ -59,18 +59,18 @@
   margin: 0 auto;
   min-height: 200px;
 
-  @media (min-width: $width-tabl) {
-    @include centered-table ();
-    min-height: 375px;
-  }
-
-  @media (min-width: $width-desk) {
-    @include centered-desk ();
-    min-height: 500px;
-  }
-  // &::before {
-  //   здесь точка на карте
+  // @media (min-width: $width-tabl) {
+  //   @include centered-table ();
+  //   min-height: 375px;
   // }
+
+  // @media (min-width: $width-desk) {
+  //   @include centered-desk ();
+  //   min-height: 500px;
+  // }
+  &::before {
+      
+  }
 }
 
 .contacts__map-decor {
