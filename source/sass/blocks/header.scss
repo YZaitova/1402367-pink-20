@@ -1,8 +1,7 @@
 .header {
   @include centered-mobile ();
-  // background-color: rgba($color: $base-color-black, $alpha: 0.3);
+  background-color: rgba($color: $base-color-black, $alpha: 0.3);
 }
-
 // .header__navigation-toggle {
 
 // }
@@ -30,8 +29,12 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $base-color-dark;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
   // padding-bottom: 25px;
+  // @media (min-width: $width-desk) {
+  //   font-size: $font-size-base;
+  //   line-height: 18px;
+  // }
 }

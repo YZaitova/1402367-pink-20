@@ -43,8 +43,8 @@
 
 .research--hide {
   display: none;
-}
 
-.research--visible {
-  display: block;
+  // @media (min-width:$width-tabl) {
+  //   display: block;
+  // }
 }

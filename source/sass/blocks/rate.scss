@@ -1,15 +1,14 @@
 .rate {
+  @include centered-mobile ();
   background-color: $base-color-light;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  padding-top: 172px;
   padding-bottom: 98px;
-  //дописать, чтобы распределение шло по трапеции
 }
 
 .table {
   @include centered-mobile ();
-  width: 100%;
+  margin-top: 100px;
   border-collapse: collapse;
 }
 
@@ -25,7 +24,7 @@
 }
 
 .table__data {
-  width: 25%;
+  width: 100%;
   background-color: $base-color-white;
   border: 2px solid $table-border-color;
   border-radius: 1px;

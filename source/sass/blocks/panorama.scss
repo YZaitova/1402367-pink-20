@@ -1,36 +1,14 @@
 .panorama {
+  @include centered-mobile ();
   font-family: $font-stack;
   background-color: $base-color-white;
   position: relative;
 }
 
-.panorama__heading {
-  font-size: $font-size-base;
-  line-height: 30px;
-  color: $base-color-dark;
-  padding-top: 100px;
-  text-align: center;
-  padding-bottom: 97px;
-}
-
 .panorama__photo {
   display: block;
   margin: 0 auto;
-}
-
-.panorama__link {
-  display: block;
-  font-family: $font-stack;
-  font-size: 12px;
-  line-height: 24px;
-  color: $base-color-white;
-  background-color: $base-color-bright;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 13px 20px 14px 19px;
-  position: absolute;
-  top: 307px;
-  right: 150px;
+  margin-top: 50px;
 }
 
 .panorama__comment {
@@ -42,6 +20,13 @@
 .panorama__box {
   width: 100%;
   display: flex;
+}
+
+.panorama__head {
+  font-size: 14px;
+  line-height: 24px;
+  color: $base-color-dark;
+  background-color: $base-color-light;
 }
 
 .panorama__text {

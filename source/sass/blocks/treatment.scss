@@ -2,17 +2,22 @@
   @include centered-mobile ();
 }
 
+.treatment__heading {
+  @include container-mobile ();
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-dark;
+  text-align: center;
+  font-weight: 400;
+  padding: 32px 0 0 20px;
+}
+
 .treatment__form {
   display: flex;
+  flex-direction: column;
+  background-color: $base-color-light;
 }
 
-.treatment__label {
-  width: 300px;
-}
-
-.treatment__heading {
-  font-family: $font-stack;
-  font-size: $font-size-base;
-  color: $base-color-dark;
-  line-height: 30px;
+.treatment__file {
+  display: none;
 }

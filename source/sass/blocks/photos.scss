@@ -1,14 +1,35 @@
 .photos {
   @include centered-mobile ();
+  background-color: $base-color-white;
+}
+
+.photos__heading {
+  @include container-mobile ();
+  font-size: 14px;
+  line-height: 30px;
+  color: $base-color-dark;
+  text-align: center;
+  font-weight: 400;
+  padding: 32px 0 0 20px;
 }
 
 .photo {
+  position: relative;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   color: $base-color-dark;
   background-color: $base-color-light;
-  width: 300px;
-  margin-top: 50px;
+  margin-bottom: 20px;
+
+  &:not(:first-of-type) {
+    @include container-mobile ();
+  }
+
+  &--panorama {
+    margin-top: 50px;
+  }
 }
 
 .photo__img {
@@ -16,29 +37,44 @@
   background-color: $base-color-white;
 }
 
+.photo__link {
+  display: block;
+  font-family: $font-stack;
+  font-size: 12px;
+  line-height: 24px;
+  color: $base-color-white;
+  background-color: $base-color-bright;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 20px 5px 23px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
 .photo__heading {
   margin: 0;
   font-family: $font-stack;
+  padding-top: 17px;
+  padding-left: 37px;
 }
 
 .photo__time {
-  font-family: $font-stack;
   text-transform: uppercase;
   font-weight: 300;
 }
 
-.photo__text {
-  font-family: $font-stack;
-}
-
 .like__text {
   font-family: $font-stack;
-  font-size: 14px;
+  text-transform: uppercase;
+  font-size: 12px;
   line-height: 24px;
   color: $base-color-bright;
 }
 
 .like__link {
+  display: block;
+  text-decoration: none;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
 }
