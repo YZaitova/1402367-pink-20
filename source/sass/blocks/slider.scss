@@ -1,0 +1,16 @@
+.slider__toggle {
+  position: relative;
+  display: block;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
+  }
+}
