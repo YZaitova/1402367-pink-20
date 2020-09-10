@@ -5,6 +5,15 @@
   color: $base-color-dark;
   text-align: center;
   font-weight: 300;
+
+  @media #{$media-table} {
+    min-height: 127px;
+    font-size: 40px;
+  }
+
+  @media #{$media-desktop} {
+    font-size: 50px;
+  }
 }
 
 .contacts__list {

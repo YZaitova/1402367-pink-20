@@ -53,8 +53,10 @@
     padding-bottom: 34px;
 
     @media #{$media-table} {
+      width: 300px;
       min-height: 127px;
       font-size: 40px;
+      padding: 0;
     }
   }
 
@@ -80,17 +82,17 @@
   }
 }
 
-// .promo__download {
-//   @media #{$media-table} {
-//     width: 300px;
-//   }
-// }
+.promo__download {
+  @media #{$media-table} {
+    width: 300px;
+  }
+}
 
 .promo__btn {
   display: block;
   font-family: inherit;
   color: $base-color-white;
-  font-size: $font-size-base;
+  font-size: 14px;
   font-weight: 700;
   border: 3px solid $base-color-white;
   border-radius: 29px;
@@ -99,6 +101,10 @@
   padding: 15px 0;
   margin-right: auto;
   margin-left: auto;
+
+  @media #{$media-table} {
+    font-size: $font-size-base;
+  }
 }
 
 .promo__list {

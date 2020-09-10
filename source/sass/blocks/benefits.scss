@@ -1,6 +1,5 @@
 .benefits {
   padding-top: 15px;
-  background-color: $base-color-light;
 }
 
 .benefits__container {
@@ -16,13 +15,13 @@
   text-align: center;
   padding-top: 5px;
 
-  // @media (min-width: $width-table) {
-  //   font-size: 40px;
-  // }
+  @media #{$media-table} {
+    font-size: 40px;
+  }
 
-  // @media (min-width: $width-desktop) {
-  //   font-size: 50px;
-  // }
+  @media #{$media-desktop} {
+    font-size: 50px;
+  }
 }
 
 .benefits__list {
@@ -37,6 +36,10 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  @media #{$media-table} {
+    background-position: left top;
+  }
 
   @media #{$media-desktop} {
     flex-direction: row;
@@ -55,13 +58,10 @@
     width: 50%;
   }
 
-  @media #{$media-desktop} {
-    width: 33.33%;
-    padding-top: 360px;
-  }
-
   &--mood {
     @media #{$media-desktop} {
+      width: 33.33%;
+      padding-top: 360px;
       background-image: url("../img/iphone-screen-1-mobile@1x.png");
       background-repeat: repeat;
       background-position: center top;
@@ -70,6 +70,8 @@
 
   &--change {
     @media #{$media-desktop} {
+      width: 33.33%;
+      padding-top: 360px;
       background-image: url("../img/iphone-screen-2-mobile@1x.png");
       background-repeat: no-repeat;
     }
@@ -77,6 +79,8 @@
 
   &--friends {
     @media #{$media-desktop} {
+      width: 33.33%;
+      padding-top: 360px;
       background-image: url("../img/iphone-screen-3-mobile@1x.png");
       background-repeat: no-repeat;
     }
@@ -89,6 +93,10 @@
   font-size: $font-size-base;
   color: $base-color-black;
   text-align: center;
+
+  @media #{$media-desktop} {
+    font-size: 30px;
+  }
 }
 
 .benefits__wrap {
@@ -104,4 +112,8 @@
   font-size: 14px;
   color: $base-color-dark;
   text-align: center;
+
+  @media #{$media-desktop} {
+    font-size: $font-size-base;
+  }
 }

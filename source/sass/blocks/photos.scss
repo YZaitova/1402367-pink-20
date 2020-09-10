@@ -36,6 +36,9 @@
   color: $base-color-dark;
   background-color: $base-color-light;
   margin-bottom: 20px;
+  text-align: left;
+  padding-left: 17px;
+  padding-right: 17px;
 
   &--panorama {
     width: 100%;
@@ -43,10 +46,22 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media #{$media-table} {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media #{$media-desktop} {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
 }
 
 .photo__img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $base-color-white;
 }
 
@@ -68,8 +83,10 @@
 .photo__heading {
   margin: 0;
   font-family: $font-stack;
-  padding-top: 17px;
-  padding-left: 37px;
+
+  @media #{$media-table} {
+    padding-top: 30px;
+  }
 }
 
 .photo__time {
@@ -77,16 +94,38 @@
   font-weight: 300;
 }
 
+.photo__like {
+  display: flex;
+
+  @media #{$media-table} {
+    justify-content: space-between;
+  }
+}
+
 .like__text {
   font-family: $font-stack;
   text-transform: uppercase;
   font-size: 12px;
   color: $base-color-bright;
+  order: 0;
+  padding-left: 18px;
+
+  @media #{$media-table} {
+    padding-left: 0;
+    order: -1;
+  }
 }
 
 .like__link {
   display: block;
+  width: 15px;
   text-decoration: none;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
+  background-position: center center;
+  order: -1;
+
+  @media #{$media-table} {
+    order: 0;
+  }
 }

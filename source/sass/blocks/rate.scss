@@ -42,9 +42,13 @@
 .table__text {
   color: $base-color-dark;
   font-family: $font-stack;
-  font-size: $font-size-base;
+  font-size: 14px;
   padding-bottom: 23px;
   padding-left: 18px;
+
+  @media #{$media-table} {
+    font-size: $font-size-base;
+  }
 }
 
 .table__price {
