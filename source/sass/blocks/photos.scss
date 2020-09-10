@@ -20,9 +20,9 @@
   background-color: $base-color-light;
   margin-bottom: 20px;
 
-  &:not(:first-of-type) {
-    @include container-mobile ();
-  }
+  // &:not(:first-of-type) {
+
+  // }
 
   &--panorama {
     margin-top: 50px;

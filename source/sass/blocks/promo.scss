@@ -1,9 +1,9 @@
 .promo {
-  @include centered-mobile ();
   background-color: $bg-color-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
+  background-size: cover;
 
   // &--index {
   //
@@ -14,21 +14,19 @@
   // }
 }
 
-.promo__wrap {
-  @media (min-width: $width-tabl) {
-    //  width: 50%;
-  }
-
-  @media (min-width: $width-desk) {
-    // width: 33%;
-  }
-}
-
 .promo__head-wrap {
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: center bottom;
   min-height: 395px;
+
+  @media #{$media-table} {
+    min-height: 127px;
+  }
+}
+
+.promo__container {
+  @include container ();
 }
 
 .promo__heading {
@@ -38,6 +36,17 @@
   font-size: 24px;
   font-weight: 300;
   text-align: center;
+
+  // @media #{$media-table} {
+  //   min-height: 127px;
+  //   width: 300px;
+  //   font-size: 40px;
+  // }
+
+  // @media #{$media-desktop} {
+  //   font-size: 50px;
+  //   width: 300px;
+  // }
 
   &--index {
     padding-top: 25px;
@@ -57,16 +66,24 @@
   }
 }
 
-.promo__download {
-  // @include centered-mobile ();
+.promo__wrap {
   background-color: $bg-color-dark;
   padding-top: 30px;
   padding-bottom: 15px;
+
+  @media #{$media-table} {
+    background-color: transparent;
+  }
 }
+
+// .promo__download {
+//   @media #{$media-table} {
+//     width: 300px;
+//   }
+// }
 
 .promo__btn {
   display: block;
-  width: 280px;
   font-family: inherit;
   color: $base-color-white;
   font-size: $font-size-base;
@@ -82,11 +99,12 @@
 
 .promo__list {
   margin: 0;
+  padding: 0;
   margin-top: 32px;
   list-style: none;
   display: flex;
+  justify-content: center;
   align-items: baseline;
-  margin-left: 19px;
 }
 
 .promo__item {

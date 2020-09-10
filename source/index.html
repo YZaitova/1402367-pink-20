@@ -8,45 +8,53 @@
   </head>
   <body>
     <header class="header">
-      <a class="logo header__logo" href="index.html">
-        <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
-      </a>
-      <button class="header__navigation-toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <nav class="header__nav">
-        <a class="header__link header__link--active" href="#">Главная</a>
-        <a class="header__link" href="photo.html" >Фотографии</a>
-        <a class="header__link" href="form.html">Конкурс</a>
-        <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </nav>
+      <div class="header__wrap">
+        <div class="header__container">
+          <a class="logo header__logo" href="index.html">
+            <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
+          </a>
+          <!-- <button class="header__navigation-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button> -->
+          <nav class="header__nav">
+            <a class="header__link header__link--active" href="#">Главная</a>
+            <a class="header__link" href="photo.html" >Фотографии</a>
+            <a class="header__link" href="form.html">Конкурс</a>
+            <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </nav>
+        </div>
+      </div>
       <section class="promo promo--index">
-        <div class="promo__wrap">
-          <div class="promo__head-wrap">
+        <div class="promo__head-wrap">
+          <div class="promo__container">
             <h2 class="promo__heading promo__heading--index">
               Взгляните на жизнь иначе!
             </h2>
           </div>
-          <div class="promo__download">
-            <a class="promo__btn" href="#">Скачать приложение</a>
-            <ul class="promo__list">
-              <li class="promo__item">
-                <a href="#" class="promo__link">
-                  <img class="promo__img promo__img--apple" src="img/logo-apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
-                </a>
-              </li>
-              <li class="promo__item">
-                <a href="#" class="promo__link">
-                  <img class="promo__img promo__img--android" src="img/logo-android.svg" alt="Скачивание на Android" class="promo__img">
-                </a>
-              </li>
-              <li class="promo__item">
-                <a href="#" class="promo__link">
-                  <img class="promo__img promo__img--windows" src="img/logo-microsoft.svg" alt="Скачивание на Windows" class="promo__img">
-                </a>
-              </li>
-            </ul>
-            <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+        <div class="promo__wrap">
+          <div class="promo__container">
+            <div class="promo__download">
+              <a class="promo__btn" href="#">Скачать приложение</a>
+              <ul class="promo__list">
+                <li class="promo__item">
+                  <a href="#" class="promo__link">
+                    <img class="promo__img promo__img--apple" src="img/logo-apple.svg" alt="Скачивание на iPhone, iPad, MacOSX">
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a href="#" class="promo__link">
+                    <img class="promo__img promo__img--android" src="img/logo-android.svg" alt="Скачивание на Android" class="promo__img">
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a href="#" class="promo__link">
+                    <img class="promo__img promo__img--windows" src="img/logo-microsoft.svg" alt="Скачивание на Windows" class="promo__img">
+                  </a>
+                </li>
+              </ul>
+              <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
       </section>
@@ -54,9 +62,11 @@
     <main>
       <h1 class="visually-hidden">Сайт «Pink» — взгляните на жизнь иначе!</h1>
       <section class="benefits">
-        <div class="benefits__wrap">
+        <div class="benefits__container">
           <h2 class="benefits__text">Устали от серости мегаполиса?</h2>
           <h3 class="benefits__text">Нам есть, что вам предложить!</h3>
+        </div>
+        <div class="benefits__wrap">
           <ul class="benefits__list">
             <li class="benefits__item benefits__item--mood">
               <h4 class="benefits__heading benefits__heading--mood">Поднимает настроение</h4>
@@ -161,39 +171,43 @@
           </ul>
         </div>
         <div class="contacts__map">
-          <span class="contacts__map-decor"></span>
-          <!-- <iframe src="" frameborder="0"></iframe> -->
+          <div class="contacts__container">
+            <span class="contacts__map-decor"></span>
+            <!-- <iframe src="" frameborder="0"></iframe> -->
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <a class="logo footer__logo" href="index.html">
-        <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
-      </a>
-      <div class="socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a href="" class="socials__link">
-              <img class="socials__img" src="img/icon-twitter.svg" alt="Социальная сеть 'Твиттер'">
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="" class="socials__link">
-              <img class="socials__img" src="img/icon-facebook.svg" alt="Социальная сеть 'Фейсбук'">
-            </a>
-          </li>
-          <li class="socials__item">
-            <a href="" class="socials__link">
-              <img class="socials__img" src="img/icon-youtube.svg" alt="Социальная сеть 'Гуглплей'">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="developers">
-        <a class="developers__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developers__img" src="img/htmlacademy.svg" alt="Ссылка на лендинг курса">
+      <div class="footer__container">
+        <a class="logo footer__logo" href="index.html">
+          <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
         </a>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="" class="socials__link">
+                <img class="socials__img" src="img/icon-twitter.svg" alt="Социальная сеть 'Твиттер'">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link">
+                <img class="socials__img" src="img/icon-facebook.svg" alt="Социальная сеть 'Фейсбук'">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link">
+                <img class="socials__img" src="img/icon-youtube.svg" alt="Социальная сеть 'Гуглплей'">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="developers">
+          <a class="developers__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="developers__img" src="img/htmlacademy.svg" alt="Ссылка на лендинг курса">
+          </a>
+        </div>
       </div>
     </footer>
 

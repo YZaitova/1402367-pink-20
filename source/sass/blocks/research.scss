@@ -4,7 +4,7 @@
 }
 
 .research__wrap {
-  @include centered-mobile ();
+
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-position-x: 10px;
@@ -41,7 +41,7 @@
 .research--hide {
   display: none;
 
-  // @media (min-width:$width-tabl) {
+  // @media (min-width:$width-table) {
   //   display: block;
   // }
 }

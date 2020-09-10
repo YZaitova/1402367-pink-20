@@ -1,31 +1,28 @@
 .benefits {
-  @include centered-mobile();
   padding-top: 15px;
   background-color: $base-color-light;
 }
 
-.benefits__wrap,
-.benefits__list {
-  @include container-mobile();
+.benefits__container {
+  @include container();
 }
 
 .benefits__text {
-  margin: 20px 15px 0 15px;
+  margin: 0 auto;
   font-family: $font-stack;
   font-size: 24px;
   color: $base-color-dark;
   font-weight: 300;
   text-align: center;
   padding-top: 5px;
-  margin-left: 38px;
 
-  @media (min-width: $width-tabl) {
-    font-size: 40px;
-  }
+  // @media (min-width: $width-table) {
+  //   font-size: 40px;
+  // }
 
-  @media (min-width: $width-desk) {
-    font-size: 50px;
-  }
+  // @media (min-width: $width-desktop) {
+  //   font-size: 50px;
+  // }
 }
 
 .benefits__list {
@@ -33,17 +30,55 @@
   padding: 0;
   margin-top: 42px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   padding-bottom: 318px;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position-x: 60%;
-  background-position-y: 110%;
+  background-position: center bottom;
 
-  @media (min-width: $width-tabl) {
-    margin-right: 0;
+  @media #{$media-desktop} {
+    flex-direction: row;
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  @include container();
+}
+
+.benefits__item {
+  text-align: center;
+  margin-top: 30px;
+
+  @media #{$media-table} {
     width: 50%;
+  }
+
+  @media #{$media-desktop} {
+    width: 33.33%;
+    padding-top: 360px;
+  }
+
+  &--mood {
+    @media #{$media-desktop} {
+      background-image: url("../img/iphone-screen-1-mobile@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--change {
+    @media #{$media-desktop} {
+      background-image: url("../img/iphone-screen-2-mobile@1x.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--friends {
+    @media #{$media-desktop} {
+      background-image: url("../img/iphone-screen-3-mobile@1x.png");
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -53,7 +88,12 @@
   font-size: $font-size-base;
   color: $base-color-black;
   text-align: center;
-  margin-left: 20px;
+}
+
+.benefits__wrap {
+  background-color: $base-color-light;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
 }
 
 .benefits__paragraph {
@@ -63,32 +103,4 @@
   font-size: 14px;
   color: $base-color-dark;
   text-align: center;
-  padding-top: 13px;
-  padding-left: 20px;
-}
-
-.benefits__item {
-  text-align: center;
-  margin-top: 30px;
-
-  @media (min-width: $width-desk) {
-    width: 33.33%;
-    padding-top: 360px;
-  }
-
-  &--mood {
-    background-image: url("../img/iphone-screen-1-mobile@1x.png");
-    background-repeat: no-repeat;
-    padding-top: 40px;
-  }
-
-  &--change {
-    background-image: url("../img/iphone-screen-2-mobile@1x.png");
-    background-repeat: no-repeat;
-  }
-
-  &--friends {
-    background-image: url("../img/iphone-screen-3-mobile@1x.png");
-    background-repeat: no-repeat;
-  }
 }

@@ -1,6 +1,4 @@
 .form {
-  @include centered-mobile ();
-
   &--checkbox {
     font-family: $font-stack;
     font-size: $font-size-base;
@@ -61,14 +59,12 @@
 }
 
 .form__wrap {
-  @include container-mobile ();
   display: flex;
   flex-direction: column;
   margin-top: 42px;
 }
 
 .form__fieldset {
-  @include container-mobile ();
   display: flex;
   flex-wrap: wrap;
   border: none;

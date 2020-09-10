@@ -1,43 +1,48 @@
 .reviews {
-  @include centered-mobile ();
-  // background-image: url("../img/icon-quotes.svg");
-  // background-repeat: no-repeat;
-  // background-position-x: center;
-  // background-position-y: 58px;
+  // @include container;
+  @media #{$media-desktop} {
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 58px;
+  }
 }
 
-// .reviews__list {
-//   @media (min-width: $width-desk) {
-//     position: relative;
+.reviews__list {
+  @include container();
 
-//     &::before {
-//       content: "";
-//       width: 22px;
-//       height: 41px;
-//       position: absolute;
-//       top: 50%;
-//       background-image: url("../img/icon-review-arrow-left.svg");
-//     }
+  @media #{$media-desktop} {
+    position: relative;
 
-//     &::after {
-//       content: "";
-//       width: 22px;
-//       height: 41px;
-//       position: absolute;
-//       right: 0;
-//       top: 50%;
-//       background-image: url("../img/icon-review-arrow-right.svg");
-//     }
-//   }
-// }
+    &::before {
+      content: "";
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      top: 50%;
+      background-image: url("../img/icon-review-arrow-left.svg");
+    }
+
+    &::after {
+      content: "";
+      width: 22px;
+      height: 41px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      background-image: url("../img/icon-review-arrow-right.svg");
+    }
+  }
+}
 
 .reviews__item {
   margin: 0;
-  padding-left: 15px;
-  padding-right: 20px;
-  // padding-top: 170px;
   display: flex;
   flex-direction: column;
+
+  @media #{$media-desktop} {
+    padding-top: 170px;
+  }
 }
 
 .reviews__text {
@@ -48,10 +53,6 @@
   color: $base-color-dark;
   order: 0;
   margin-top: 10px;
-
-  @media (min-width: $width-tabl) {
-    font-size: 18px;
-  }
 }
 
 .reviews__author-name {
@@ -64,10 +65,6 @@
   text-align: center;
   font-style: normal;
   order: -1;
-
-  @media #{$width-table} {
-    font-size: 20px;
-  }
 }
 
 .reviews__author-age {
@@ -77,8 +74,4 @@
   color: $base-color-dark;
   margin-top: 2px;
   display: none;
-
-  // @media (min-width: $width-tabl) {
-  //   display: block;
-  // }
 }
