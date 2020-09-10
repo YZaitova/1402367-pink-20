@@ -2,13 +2,30 @@
   background-color: $base-color-white;
 }
 
-.photos__heading {
+.photos__wrap {
   @include container ();
+}
+
+.photos__heading {
   font-size: 14px;
   color: $base-color-dark;
   text-align: center;
   font-weight: 400;
   padding: 32px 0 0 20px;
+}
+
+.photos__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @media #{$media-table} {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media #{$media-desktop} {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .photo {
@@ -20,12 +37,11 @@
   background-color: $base-color-light;
   margin-bottom: 20px;
 
-  // &:not(:first-of-type) {
-
-  // }
-
   &--panorama {
+    width: 100%;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

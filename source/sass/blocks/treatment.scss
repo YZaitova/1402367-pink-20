@@ -1,9 +1,9 @@
-// .treatment {
+.treatment__container {
+  @include container ();
+}
 
-// }
 
 .treatment__heading {
-  @include container ();
   font-size: 14px;
   color: $base-color-dark;
   text-align: center;
@@ -13,7 +13,8 @@
 
 .treatment__form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: $base-color-light;
 }
 
