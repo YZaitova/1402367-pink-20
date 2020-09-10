@@ -9,23 +9,27 @@
   <body>
     <header class="header">
       <div class="header__wrap">
-        <nav class="header__nav">
+        <div class="header__container">
           <a class="logo header__logo" href="index.html">
             <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
           </a>
           <!-- <button class="header__navigation-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button> -->
-          <a class="header__link" href="index.html">Главная</a>
-          <a class="header__link" href="photo.html" >Фотографии</a>
-          <a class="header__link header__link--active" href="#">Конкурс</a>
-          <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </nav>
+          <nav class="header__nav">
+            <a class="header__link" href="index.html">Главная</a>
+            <a class="header__link" href="photo.html" >Фотографии</a>
+            <a class="header__link  header__link--active" href="#">Конкурс</a>
+            <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </nav>
+        </div>
       </div>
       <section class="promo">
-        <h2 class="promo__heading promo__heading--form">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h2>
+        <div class="promo__container">
+          <h2 class="promo__heading promo__heading--form">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h2>
+        </div>
       </section>
     </header>
     <main>
@@ -34,20 +38,22 @@
         <h3 class="contest__heading visually-hidden" >Пожалуйста, заполните форму ниже:</h3>
         <form class="contest__form form" action="https://echo.htmlacademy.ru" method="get">
           <div class="form__wrap">
-            <label class="form__label">
-              Фамилия:
-              <input class="form__text" type="text" name="user-surname" placeholder="Укажите фамилию *">
-            </label>
-            <br>
-            <label class="form__label">
-              Имя:
-              <input class="form__text" type="text" name="user-name" placeholder="Введите ваше имя *">
-            </label>
-            <br>
-            <label class="form__label">
-              Отчество:
-              <input class="form__text" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
-            </label>
+            <div class="form__inner">
+              <label class="form__label">
+                Фамилия:
+                <input class="form__text" type="text" name="user-surname" placeholder="Укажите фамилию *">
+              </label>
+              <br>
+              <label class="form__label">
+                Имя:
+                <input class="form__text" type="text" name="user-name" placeholder="Введите ваше имя *">
+              </label>
+              <br>
+              <label class="form__label">
+                Отчество:
+                <input class="form__text" type="text" name="user-patronymic" placeholder="Ну и отчество тоже">
+              </label>
+            </div>
             <fieldset class="form__fieldset form__fieldset--travel">
               <legend class="form__legend form__legend--travel">С каким приложением путешествовали?</legend>
               <input class="form__radio" type="radio" name="app" value="ios" id="ios">
@@ -62,11 +68,11 @@
               <label class="form__label form__label--information">
                 Номер телефона
               </label>
-              <input class="form__text form__text-tel" type="number" name="user-number" placeholder="Номер, пожалуйста"><br>
+              <input class="form__text form__text--information form__text-tel" type="number" name="user-number" placeholder="Номер, пожалуйста"><br>
               <label class="form__label form__label--information">
                 Адрес почты
               </label>
-              <input class="form__text form__text-mail" type="email" name="user-email" placeholder="Введите почту *"><br>
+              <input class="form__text form__text--information form__text-mail" type="email" name="user-email" placeholder="Введите почту *"><br>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--achieve">
               <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
@@ -106,33 +112,35 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo footer__logo" href="index.html">
-        <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
-      </a>
-      <div class="socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <img class="socials__img" src="img/icon-twitter.svg" alt="Социальная сеть 'Твиттер'">
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <img class="socials__img" src="img/icon-facebook.svg" alt="Социальная сеть 'Фейсбук'">
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link" href="#">
-              <img class="socials__img" src="img/icon-youtube.svg" alt="Социальная сеть 'Гуглплей'">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="developers">
-        <a class="developers__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developers__img" src="img/htmlacademy.svg" alt="Ссылка на лендинг курса">
+      <div class="footer__container">
+        <a class="logo footer__logo" href="index.html">
+          <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
         </a>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="" class="socials__link">
+                <img class="socials__img" src="img/icon-twitter.svg" alt="Социальная сеть 'Твиттер'">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link">
+                <img class="socials__img" src="img/icon-facebook.svg" alt="Социальная сеть 'Фейсбук'">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="" class="socials__link">
+                <img class="socials__img" src="img/icon-youtube.svg" alt="Социальная сеть 'Гуглплей'">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="developers">
+          <a class="developers__text" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="developers__img" src="img/htmlacademy.svg" alt="Ссылка на лендинг курса">
+          </a>
+        </div>
       </div>
     </footer>
     <section class="modal modal--succsess visually-hidden">

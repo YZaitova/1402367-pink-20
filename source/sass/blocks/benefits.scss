@@ -63,7 +63,8 @@
   &--mood {
     @media #{$media-desktop} {
       background-image: url("../img/iphone-screen-1-mobile@1x.png");
-      background-repeat: no-repeat;
+      background-repeat: repeat;
+      background-position: center top;
     }
   }
 
