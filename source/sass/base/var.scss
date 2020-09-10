@@ -14,44 +14,32 @@ $font-size-s: 21px;
 $font-size-m: 30px;
 $font-size-l: 50px;
 
-$width-desk: 1200px;
-$width-tabl: 660px;
-$width-mobile-only: 659px;
+$width-desktop: 1200px;
+$width-table: 660px;
+$width-mobile: 320px;
 
-@mixin centered-desk () {
-  max-width: 1200px;
+$media-mobile: screen and (min-width: $width-mobile);
+$media-table: screen and (min-width: $width-table);
+$media-desktop: screen and (min-width: $width-desktop);
+
+@mixin container () {
+  min-width: 280px;
   margin-right: auto;
   margin-left: auto;
-}
-
-@mixin container-desk () {
-  width: 960px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-@mixin centered-table () {
-  max-width: 660px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@mixin container-table () {
-  width: 620px;
   padding-left: 20px;
   padding-right: 20px;
-}
 
-@mixin centered-mobile () {
-  max-width: 320px;
-  margin-right: auto;
-  margin-left: auto;
-}
+  @media #{$media-table} {
+    min-width: $media-table;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
-@mixin container-mobile () {
-  max-width: 280px;
-  padding-left: 10px;
-  padding-right: 10px;
+  @media #{$media-desktop} {
+    min-width: $media-desktop;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
 /* important здесь используется, чтобы срабатывал visually-hidden для элементов
 с любыми заданными параметрами, ниже в коде или с более приоретными свойствами*/
