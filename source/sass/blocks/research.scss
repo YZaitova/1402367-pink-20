@@ -1,23 +1,27 @@
 .research {
   background-color: $base-color-light;
-  // background-color: red;
+
+  @media #{$media-desktop} {
+    height: 330px;
+  }
+
+  @media #{$media-desktop} {
+    height: 429px;
+  }
 }
 
 .research__wrap {
-  @include centered-mobile ();
+  @include container ();
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-position-x: 10px;
-  background-position-y: 7px;
-  padding-left: 380px;
-  padding-bottom: 110px;
+  background-position-x: left;
+  background-position-y: center;
 }
 
 .research__heading {
   margin: 0;
   font-family: $font-stack;
   font-size: $font-size-m;
-  line-height: 30px;
   color: $base-color-black;
   padding-top: 102px;
 }
@@ -26,7 +30,6 @@
   margin: 0;
   font-family: $font-stack;
   font-size: $font-size-base;
-  line-height: 30px;
   color: $base-color-dark;
   padding-top: 27px;
 }
@@ -34,9 +37,7 @@
 .research__link {
   font-family: $font-stack;
   font-size: $font-size-base;
-  line-height: 30px;
   color: $base-color-bright;
-  width: 60%;
   display: block;
   padding-top: 30px;
 }
@@ -44,7 +45,14 @@
 .research--hide {
   display: none;
 
-  // @media (min-width:$width-tabl) {
-  //   display: block;
-  // }
+  @media #{$media-table} {
+    display: block;
+    height: 330px;
+  }
+
+  @media #{$media-desktop} {
+    // height: 429px;
+    padding-top: 115px;
+    padding-bottom: 120px;
+  }
 }

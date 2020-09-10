@@ -1,32 +1,48 @@
-.contacts__wrap {
-  @include centered-mobile ();
-}
-
 .contacts__heading {
   margin: 0;
   font-family: $font-stack;
   font-size: 24px;
-  line-height: 120%;
   color: $base-color-dark;
   text-align: center;
   font-weight: 300;
+
+  @media #{$media-table} {
+    min-height: 127px;
+    font-size: 40px;
+  }
+
+  @media #{$media-desktop} {
+    font-size: 50px;
+  }
 }
 
 .contacts__list {
   list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__item {
   text-align: center;
+  width: 100%;
   margin-top: 45px;
+
+  @media #{$media-table} {
+    width: 50%;
+  }
+
+  @media #{$media-desktop} {
+    width: 33.33%;
+  }
 }
 
 .contacts__text {
   margin: 0;
+  padding: 0;
   font-family: $font-stack;
   font-size: $font-size-base;
-  line-height: 25px;
   color: $base-color-dark;
   font-weight: 700;
 }
@@ -37,20 +53,19 @@
 
 .contacts__paragraph {
   margin: 0;
+  padding: 0;
 }
 
 .contacts__link,
 .contacts__paragraph {
   font-family: $font-stack;
   font-size: 24px;
-  line-height: 33px;
   color: $base-color-bright;
   font-weight: 300;
   text-align: center;
 }
 
 .contacts__map {
-  @include centered-mobile ();
   position: relative;
   background-color: $base-color-light;
   background-image: url("../img/bg-map-mobile@1x.png");
@@ -59,18 +74,25 @@
   margin: 0 auto;
   min-height: 200px;
 
-  // @media (min-width: $width-tabl) {
-  //   @include centered-table ();
-  //   min-height: 375px;
-  // }
+  @media #{$media-table} {
+    min-height: 375px;
+  }
 
-  // @media (min-width: $width-desk) {
-  //   @include centered-desk ();
-  //   min-height: 500px;
-  // }
-  // &::before {
+  @media #{$media-desktop} {
+    min-height: 500px;
+  }
 
-  // }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: $base-color-bright;
+    border: 8px solid $base-color-white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .contacts__map-decor {
@@ -80,4 +102,12 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: -30px;
+}
+
+.contacts__wrap {
+  @include container();
+}
+
+.contacts__container {
+  @include container();
 }

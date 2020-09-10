@@ -1,11 +1,10 @@
-.treatment {
-  @include centered-mobile ();
+.treatment__container {
+  @include container ();
 }
 
+
 .treatment__heading {
-  @include container-mobile ();
   font-size: 14px;
-  line-height: 30px;
   color: $base-color-dark;
   text-align: center;
   font-weight: 400;
@@ -14,7 +13,8 @@
 
 .treatment__form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: $base-color-light;
 }
 

@@ -1,25 +1,16 @@
 .footer {
-  @include centered-mobile ();
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-
-  @media (min-width: $width-tabl) {
-    @include centered-table ();
-    flex-direction: row;
-  }
+  @include container();
 }
 
 .socials {
-  @media (min-width: $width-desk) {
+  @media #{$media-desktop} {
+    width: 20%;
     padding-top: 75px;
   }
 }
 
 .footer__logo {
   display: block;
-  margin: 20px auto;
 }
 
 .socials__list {
@@ -49,14 +40,31 @@
   left: 16px;
 }
 
+.developers {
+  @media #{$media-desktop} {
+    width: 20%;
+  }
+}
+
 .developers__text {
   font-family: $font-stack;
   font-size: 14px;
-  line-height: 18px;
   color: $base-color-dark;
   text-decoration: none;
 }
 
 .developers__img {
   width: 40px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media #{$media-table} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

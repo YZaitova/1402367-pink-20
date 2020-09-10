@@ -1,15 +1,20 @@
 .rate {
-  @include centered-mobile ();
   background-color: $base-color-light;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   padding-bottom: 98px;
+
+  @include container ();
 }
 
 .table {
-  @include centered-mobile ();
   margin-top: 100px;
   border-collapse: collapse;
+  width: 300%;
+
+  @media #{$media-table} {
+    width: 100%;
+  }
 }
 
 .table__heading {
@@ -17,7 +22,6 @@
   text-transform: uppercase;
   font-family: $font-stack;
   font-size: $font-size-base;
-  line-height: 30px;
   background-color: $base-color-dark;
   padding-top: 15px;
   padding-bottom: 25px;
@@ -29,21 +33,27 @@
   border: 2px solid $table-border-color;
   border-radius: 1px;
   padding-top: 10px;
+
+  @media #{$media-table} {
+    width: 25%;
+  }
 }
 
 .table__text {
   color: $base-color-dark;
   font-family: $font-stack;
-  font-size: $font-size-base;
-  line-height: 30px;
+  font-size: 14px;
   padding-bottom: 23px;
   padding-left: 18px;
+
+  @media #{$media-table} {
+    font-size: $font-size-base;
+  }
 }
 
 .table__price {
   font-family: $font-stack;
   font-size: 24px;
-  line-height: 30px;
   font-weight: 300;
 }
 

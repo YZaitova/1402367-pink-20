@@ -1,5 +1,4 @@
 .panorama {
-  @include centered-mobile ();
   font-family: $font-stack;
   background-color: $base-color-white;
   position: relative;
@@ -12,7 +11,6 @@
 }
 
 .panorama__comment {
-  @include centered-mobile ();
   background-color: $base-color-light;
   padding-bottom: 31px;
 }
@@ -24,7 +22,6 @@
 
 .panorama__head {
   font-size: 14px;
-  line-height: 24px;
   color: $base-color-dark;
   background-color: $base-color-light;
 }

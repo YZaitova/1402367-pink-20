@@ -1,29 +1,35 @@
 .header {
-  @include centered-mobile ();
   background-color: rgba($color: $base-color-black, $alpha: 0.3);
 }
-// .header__navigation-toggle {
 
-// }
+.header__wrap {
+  background-color: $base-color-dark;
+}
+
+.header__container {
+  @include container ();
+}
+
 .header__logo {
   padding-top: 23px;
   padding-bottom: 23px;
   display: block;
-  width: auto;
-  background-color: $base-color-dark;
 }
 
 .header__nav {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
+  @media #{$media-desktop} {
+    flex-direction: row;
+  }
 }
 
 .header__link {
   color: $base-color-white;
   font-family: inherit;
   font-size: $font-size-base;
-  line-height: 32px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -33,8 +39,7 @@
   padding-bottom: 16px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
   // padding-bottom: 25px;
-  // @media (min-width: $width-desk) {
+  // @media (min-width: $width-desktop) {
   //   font-size: $font-size-base;
-  //   line-height: 18px;
   // }
 }
