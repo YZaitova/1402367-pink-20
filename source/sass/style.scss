@@ -1,7 +1,9 @@
 // Начните писать стили здесь
 @import "./base/fonts.scss";
 @import "./base/var.scss";
+@import "./base/visually-hidden.scss";
 @import "./base/global.scss";
+@import "./base/mixin.scss";
 @import "./blocks/header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/promo.scss";

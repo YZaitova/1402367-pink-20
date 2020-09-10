@@ -13,7 +13,7 @@ $font-size-base: 18px;
 $font-size-s: 21px;
 $font-size-m: 30px;
 $font-size-l: 50px;
-
+//media variables
 $width-desktop: 1200px;
 $width-table: 660px;
 $width-mobile: 320px;
@@ -21,33 +21,3 @@ $width-mobile: 320px;
 $media-mobile: screen and (min-width: $width-mobile);
 $media-table: screen and (min-width: $width-table);
 $media-desktop: screen and (min-width: $width-desktop);
-
-@mixin container () {
-  min-width: 280px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media #{$media-table} {
-    min-width: $media-table;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  @media #{$media-desktop} {
-    min-width: $media-desktop;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-/* important здесь используется, чтобы срабатывал visually-hidden для элементов
-с любыми заданными параметрами, ниже в коде или с более приоретными свойствами*/
-.visually-hidden {
-  position: absolute;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
-  white-space: nowrap;
-}

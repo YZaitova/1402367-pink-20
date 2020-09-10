@@ -1,0 +1,19 @@
+@mixin container () {
+  min-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media #{$media-table} {
+    min-width: $media-table;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media #{$media-desktop} {
+    min-width: $media-desktop;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
