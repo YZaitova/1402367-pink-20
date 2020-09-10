@@ -44,7 +44,6 @@
   margin: 0;
   font-family: $font-stack;
   font-size: 14px;
-  line-height: 30px;
   text-align: center;
   color: $base-color-dark;
   order: 0;
@@ -52,14 +51,12 @@
 
   @media (min-width: $width-tabl) {
     font-size: 18px;
-    line-height: 30px;
   }
 }
 
 .reviews__author-name {
   font-family: $font-stack;
   font-size: $font-size-base;
-  line-height: 30px;
   font-weight: 700;
   color: $base-color-black;
   display: block;
@@ -68,17 +65,15 @@
   font-style: normal;
   order: -1;
 
-  // @media (min-width: $width-tabl) {
-  //   font-size: 20px;
-  //   line-height: 30px;
-  // }
+  @media #{$width-table} {
+    font-size: 20px;
+  }
 }
 
 .reviews__author-age {
   margin: 0;
   font-family: $font-stack;
   font-size: $font-size-base;
-  line-height: 30px;
   color: $base-color-dark;
   margin-top: 2px;
   display: none;

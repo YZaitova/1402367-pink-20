@@ -3,9 +3,8 @@
 }
 
 .treatment__heading {
-  @include container-mobile ();
+  @include container ();
   font-size: 14px;
-  line-height: 30px;
   color: $base-color-dark;
   text-align: center;
   font-weight: 400;

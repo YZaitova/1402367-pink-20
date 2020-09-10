@@ -4,7 +4,6 @@
   &--checkbox {
     font-family: $font-stack;
     font-size: $font-size-base;
-    line-height: 30px;
     color: $base-color-dark;
     text-transform: none;
   }
@@ -13,7 +12,6 @@
     margin-bottom: 63px;
     font-family: $font-stack;
     font-size: $font-size-base;
-    line-height: 30px;
     color: $base-color-dark;
     text-transform: none;
   }
@@ -21,7 +19,6 @@
 
 .form__label {
   font-size: 14px;
-  line-height: 30px;
   color: $base-color-bright;
   text-transform: uppercase;
 
@@ -36,7 +33,6 @@
     padding-left: 58px;
     text-transform: none;
     font-size: $font-size-base;
-    line-height: 30px;
   }
 
   &--radio:not(:last-of-type) {
@@ -51,7 +47,6 @@
 
 .form__text {
   font-size: $font-size-base;
-  line-height: 30px;
   color: $base-color-dark;
   padding-left: 19px;
   padding-top: 14px;
@@ -61,7 +56,6 @@
   &::placeholder {
     font-family: $font-stack;
     font-size: $font-size-base;
-    line-height: 30px;
     padding: 10px auto 18px 20px;
   }
 }
@@ -100,7 +94,6 @@
 
 .form__legend {
   font-size: 14px;
-  line-height: 30px;
   color: $base-color-bright;
   text-transform: uppercase;
   text-align: center;
@@ -176,7 +169,6 @@
 .form__textarea {
   font-family: inherit;
   font-size: $font-size-base;
-  line-height: 30px;
   color: $base-color-dark;
   border: 2px solid $table-border-color;
   border-radius: 1px;
@@ -204,7 +196,6 @@
   margin: 0;
   padding: 0;
   font-size: 14px;
-  line-height: 30px;
   color: $base-color-black;
   text-transform: uppercase;
   text-align: center;
