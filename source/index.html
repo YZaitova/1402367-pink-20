@@ -9,20 +9,20 @@
   <body>
     <header class="header">
       <div class="header__wrap">
-        <div class="header__container">
+        <nav class="header__nav header__nav--closed header__nav--nojs">
           <a class="logo header__logo" href="index.html">
             <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
           </a>
-          <!-- <button class="header__navigation-toggle" type="button">
+          <button class="header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-          </button> -->
-          <nav class="header__nav">
+          </button>
+          <div class="header__container">
             <a class="header__link header__link--active" href="#">Главная</a>
             <a class="header__link" href="photo.html" >Фотографии</a>
             <a class="header__link" href="form.html">Конкурс</a>
             <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
       <section class="promo promo--index">
         <div class="promo__head-wrap">
@@ -212,6 +212,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/main.js"></script>
   </body>
 </html>
