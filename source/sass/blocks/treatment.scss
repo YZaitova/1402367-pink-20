@@ -9,15 +9,39 @@
   text-align: center;
   font-weight: 400;
   padding: 32px 0 0 20px;
+
+  @media #{$media-tablet} {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media #{$media-desktop} {
+    padding: 73px 125px 78px 125px;
+  }
 }
 
 .treatment__form {
+  padding-top: 28px;
+  padding-bottom: 54px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   background-color: $base-color-light;
+}
+
+.treatment__label {
+  margin-left: 80px;
 }
 
 .treatment__file {
   display: none;
+}
+
+.treatment__filters {
+  @media #{$media-desktop} {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }

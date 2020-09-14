@@ -17,8 +17,7 @@
 }
 
 .header__wrap {
-  @include container ();
-  width: 960px;
+  @include container();
   background-color: rgba($color: $base-color-black, $alpha: 0.3);
 }
 
@@ -133,9 +132,14 @@
   }
 
   @media #{$media-desktop} {
+    font-weight: 400;
     line-height: 18px;
+    margin-top: 30px;
     background-color: transparent;
-    // padding-bottom: 25px;
+
+    &:not(:last-of-type) {
+      margin-right: 79px;
+    }
 
     &:hover {
       color: $base-color-bright;
@@ -150,7 +154,7 @@
   &--active {
     @media #{$media-desktop} {
       padding-top: 20px;
-      border-bottom: 1px solid $base-color-white;
+      text-decoration: underline;
     }
   }
 }

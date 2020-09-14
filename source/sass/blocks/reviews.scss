@@ -19,7 +19,7 @@
       width: 22px;
       height: 41px;
       position: absolute;
-      top: 50%;
+      top: 210px;
       background-image: url("../img/icon-review-arrow-left.svg");
     }
 
@@ -28,8 +28,8 @@
       width: 22px;
       height: 41px;
       position: absolute;
-      right: 50px;
-      top: 50%;
+      right: 10px;
+      top: 210px;
       background-image: url("../img/icon-review-arrow-right.svg");
     }
   }
@@ -60,7 +60,11 @@
   }
 
   @media #{$media-desktop} {
-    font-size: 24px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $font-size-base;
+    line-height: 30px;
   }
 }
 
@@ -79,6 +83,12 @@
     font-size: $font-size-base;
     order: 0;
   }
+
+  @media #{$media-desktop} {
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 10px;
+  }
 }
 
 .reviews__author-age {
@@ -92,5 +102,9 @@
 
   @media #{$media-tablet} {
     display: block;
+  }
+
+  @media #{$media-desktop} {
+    padding-top: 5px;
   }
 }
