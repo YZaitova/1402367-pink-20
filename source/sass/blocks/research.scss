@@ -1,21 +1,26 @@
 .research {
   background-color: $base-color-light;
+  display: none;
 
-  @media #{$media-desktop} {
+  @media #{$media-table} {
+    display: block;
     height: 330px;
   }
 
   @media #{$media-desktop} {
     height: 429px;
+    padding-top: 115px;
+    padding-bottom: 120px;
   }
 }
 
 .research__wrap {
-  @include container ();
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: center;
+
+  @include container ();
 }
 
 .research__heading {
@@ -40,19 +45,4 @@
   color: $base-color-bright;
   display: block;
   padding-top: 30px;
-}
-
-.research--hide {
-  display: none;
-
-  @media #{$media-table} {
-    display: block;
-    height: 330px;
-  }
-
-  @media #{$media-desktop} {
-    // height: 429px;
-    padding-top: 115px;
-    padding-bottom: 120px;
-  }
 }

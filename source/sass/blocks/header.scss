@@ -1,11 +1,18 @@
 .header {
-  background-color: rgba($color: $base-color-black, $alpha: 0.3);
+  // background-color: rgba($color: $base-color-black, $alpha: 0.3);
+  @media #{$media-desktop} {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+    height: 853px;
+  }
 }
 
 .header__wrap {
-  background-color: $base-color-dark;
-
   @include container ();
+  width: 960px;
+  background-color: rgba($color: $base-color-black, $alpha: 0.3);
 }
 
 .header__container {
@@ -15,6 +22,7 @@
 
   @media #{$media-desktop} {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -26,6 +34,13 @@
 
 .header__nav {
   position: relative;
+
+  @media #{$media-desktop} {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .header__nav-toggle {
@@ -112,6 +127,7 @@
 
   @media #{$media-desktop} {
     line-height: 18px;
+    background-color: transparent;
     // padding-bottom: 25px;
 
     &:hover {
