@@ -13,7 +13,7 @@
   border-collapse: collapse;
   width: 300%;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     width: 100%;
   }
 }
@@ -35,7 +35,7 @@
   border-radius: 1px;
   padding-top: 10px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     width: 25%;
   }
 }
@@ -47,7 +47,7 @@
   padding-bottom: 23px;
   padding-left: 18px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     font-size: $font-size-base;
   }
 }

@@ -14,11 +14,11 @@ $font-size-s: 21px;
 $font-size-m: 30px;
 $font-size-l: 50px;
 //media variables
-$width-desktop: 1200px;
-$width-table: 660px;
+$width-desktop: 860px;
+$width-tablet: 860px;
 $width-mobile: 320px;
 
 $media-mobile: screen and (min-width: $width-mobile);
-$media-table: screen and (min-width: $width-table);
+$media-tablet: screen and (min-width: $width-tablet);
 $media-desktop: screen and (min-width: $width-desktop);
 $media-mobile-only: screen and (max-width: $width-desktop);

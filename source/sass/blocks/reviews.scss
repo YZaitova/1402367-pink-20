@@ -54,7 +54,7 @@
   order: 0;
   margin-top: 10px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     order: -1;
     font-size: 20px;
   }
@@ -75,7 +75,7 @@
   font-style: normal;
   order: -1;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     font-size: $font-size-base;
     order: 0;
   }
@@ -90,7 +90,7 @@
   display: none;
   text-align: center;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     display: block;
   }
 }

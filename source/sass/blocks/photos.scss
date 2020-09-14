@@ -19,7 +19,7 @@
   grid-template-columns: 1fr;
   gap: 20px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -47,7 +47,7 @@
     margin-right: auto;
   }
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -84,7 +84,7 @@
   margin: 0;
   font-family: $font-stack;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     padding-top: 30px;
   }
 }
@@ -97,7 +97,7 @@
 .photo__like {
   display: flex;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     justify-content: space-between;
   }
 }
@@ -110,7 +110,7 @@
   order: 0;
   padding-left: 18px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     padding-left: 0;
     order: -1;
   }
@@ -125,7 +125,7 @@
   background-position: center center;
   order: -1;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     order: 0;
   }
 }

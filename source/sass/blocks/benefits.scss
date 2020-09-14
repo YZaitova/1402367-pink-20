@@ -11,7 +11,7 @@
   text-align: center;
   padding-top: 5px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     font-size: 40px;
   }
 
@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     background-position: left top;
   }
 
@@ -50,7 +50,7 @@
   text-align: center;
   // margin-top: 30px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     width: 50%;
     margin-top: 0;
   }
