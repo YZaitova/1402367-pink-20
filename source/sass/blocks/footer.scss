@@ -63,7 +63,7 @@
   flex-wrap: wrap;
   align-items: center;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     flex-direction: row;
     justify-content: space-between;
   }

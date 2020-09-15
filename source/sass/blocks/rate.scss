@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   padding-bottom: 98px;
 
-  @include container ();
+  @include container();
 }
 
 .table {
@@ -12,8 +12,12 @@
   border-collapse: collapse;
   width: 300%;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     width: 100%;
+  }
+
+  @media #{$media-desktop} {
+    margin-top: 160px;
   }
 }
 
@@ -25,6 +29,10 @@
   background-color: $base-color-dark;
   padding-top: 15px;
   padding-bottom: 25px;
+
+  @media #{$media-desktop} {
+    padding-top: 18px;
+  }
 }
 
 .table__data {
@@ -34,7 +42,7 @@
   border-radius: 1px;
   padding-top: 10px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     width: 25%;
   }
 }
@@ -46,7 +54,7 @@
   padding-bottom: 23px;
   padding-left: 18px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     font-size: $font-size-base;
   }
 }
@@ -55,6 +63,7 @@
   font-family: $font-stack;
   font-size: 24px;
   font-weight: 300;
+  margin-top: 10px;
 }
 
 .table__img {

@@ -1,13 +1,35 @@
 .header {
-  background-color: rgba($color: $base-color-black, $alpha: 0.3);
+  background-color: $base-color-dark;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+
+  @media #{$media-tablet} {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+
+  @media #{$media-desktop} {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
 }
 
 .header__wrap {
-  background-color: $base-color-dark;
+  @include container();
+  background-color: rgba($color: $base-color-black, $alpha: 0.3);
 }
 
 .header__container {
-  @include container ();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media #{$media-desktop} {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
@@ -17,19 +39,85 @@
 }
 
 .header__nav {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  position: relative;
 
   @media #{$media-desktop} {
-    flex-direction: row;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
+.header__nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: $base-color-bright;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.header__nav--closed .header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 0;
+  width: 50px;
+  height: 24px;
+  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.header__nav--closed .header__nav-toggle:hover::before {
+  color: $base-color-bright;
+  //цвет меняет свг!!!
+}
+
+.header__nav--closed .header__nav-toggle:active::before {
+  color: $base-color-bright;
+  opacity: 0.3;
+  //цвет меняет свг!!!
+}
+
+.header__nav--open .header__nav-toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-menu-cross.svg");
+}
+
+.header__nav--open .header__nav-toggle:hover::before {
+  color: $base-color-bright;
+  //цвет меняет свг!!!
+}
+
+.header__nav--open .header__nav-toggle:active::before {
+  color: $base-color-bright;
+  opacity: 0.3;
+  //цвет меняет свг!!!
+}
+
 .header__link {
+  display: block;
   color: $base-color-white;
   font-family: inherit;
   font-size: $font-size-base;
+  line-height: 32px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -38,8 +126,59 @@
   padding-top: 16px;
   padding-bottom: 16px;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(255, 255, 255, 0.15);
-  // padding-bottom: 25px;
-  // @media (min-width: $width-desktop) {
-  //   font-size: $font-size-base;
-  // }
+
+  @media #{$media-tablet} {
+    text-transform: none;
+  }
+
+  @media #{$media-desktop} {
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 30px;
+    background-color: transparent;
+
+    &:not(:last-of-type) {
+      margin-right: 79px;
+    }
+
+    &:hover {
+      color: $base-color-bright;
+    }
+
+    &:active {
+      color: $base-color-white;
+      opacity: 0.3;
+    }
+  }
+
+  &--active {
+    @media #{$media-desktop} {
+      padding-top: 20px;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: $width-desktop) {
+  .header__nav--closed .header__link {
+    display: none;
+  }
+}
+
+@media #{$media-desktop} {
+  .header__nav-toggle {
+    display: none;
+  }
+
+  .header__nav--open .header__link {
+    display: block;
+  }
+}
+
+.header__nav--nojs .header__nav-toggle {
+  display: none;
+}
+
+.header__nav--nojs .header__link {
+  display: block;
 }

@@ -1,21 +1,28 @@
 .research {
   background-color: $base-color-light;
+  display: none;
 
-  @media #{$media-desktop} {
-    height: 330px;
+  @media #{$media-tablet} {
+    display: block;
   }
 
   @media #{$media-desktop} {
-    height: 429px;
+    margin-top: 15px;
   }
 }
 
 .research__wrap {
-  @include container ();
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: center;
+  background-position-x: 10px;
+  background-position-y: 35px;
+
+  @include container ();
+}
+
+.research__container {
+  padding-left: 370px;
+  padding-bottom: 120px;
 }
 
 .research__heading {
@@ -24,6 +31,10 @@
   font-size: $font-size-m;
   color: $base-color-black;
   padding-top: 102px;
+
+  @media #{$media-desktop} {
+    padding-top: 123px;
+  }
 }
 
 .research__text {
@@ -32,6 +43,11 @@
   font-size: $font-size-base;
   color: $base-color-dark;
   padding-top: 27px;
+
+  @media #{$media-desktop} {
+    padding-top: 20px;
+    line-height: 30px;
+  }
 }
 
 .research__link {
@@ -40,19 +56,8 @@
   color: $base-color-bright;
   display: block;
   padding-top: 30px;
-}
-
-.research--hide {
-  display: none;
-
-  @media #{$media-table} {
-    display: block;
-    height: 330px;
-  }
 
   @media #{$media-desktop} {
-    // height: 429px;
-    padding-top: 115px;
-    padding-bottom: 120px;
+    padding-top: 33px;
   }
 }

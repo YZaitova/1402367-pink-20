@@ -1,27 +1,27 @@
-.promo {
-  background-color: $bg-color-dark;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-size: cover;
-
-  // &--index {
-  //
-  //
-  //   background-position-x: 25px;
-  //   background-position-y: 93px;
-  //   padding-bottom: 105px;
-  // }
-}
-
 .promo__head-wrap {
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  min-height: 395px;
 
-  @media #{$media-table} {
-    min-height: 127px;
+  @media #{$media-tablet} {
+    padding-top: 114px;
+    background-image: none;
+  }
+}
+
+.promo {
+  @media #{$media-tablet} {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+  }
+
+  @media #{$media-desktop} {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 220px 125px;
+  }
+
+  &--photo,
+  &--form {
     background-image: none;
   }
 }
@@ -38,37 +38,24 @@
   font-weight: 300;
   text-align: center;
 
-  @media #{$media-table} {
-    min-height: 127px;
+  @media #{$media-tablet} {
     font-size: 40px;
   }
 
   @media #{$media-desktop} {
     font-size: 50px;
+    line-height: 68px;
+    width: 30%;
+    padding: 10px 5px 34px 10px;
   }
 
-  &--index {
-    padding-top: 25px;
-    padding-left: 16px;
-    padding-bottom: 34px;
-
-    @media #{$media-table} {
-      width: 300px;
-      min-height: 127px;
-      font-size: 40px;
-      padding: 0;
-    }
-  }
-
+  &--photo,
   &--form {
-    padding-top: 30px;
-    padding-left: 16px;
-    padding-bottom: 50px;
-  }
-
-  &--photo {
-    min-height: 105px;
-    padding: 30px 14px 34px 16px;
+    @media #{$media-desktop} {
+      width: 100%;
+      margin-top: 40px;
+      padding: 44px 0 90px 0;
+    }
   }
 }
 
@@ -77,13 +64,18 @@
   padding-top: 30px;
   padding-bottom: 15px;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     background-color: transparent;
+  }
+
+  @media #{$media-desktop} {
+    padding-top: 0;
+    padding-bottom: 105px;
   }
 }
 
 .promo__download {
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     width: 300px;
   }
 }
@@ -102,8 +94,14 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media #{$media-table} {
+  @media #{$media-tablet} {
     font-size: $font-size-base;
+  }
+
+  @media #{$media-desktop} {
+    padding: 18px 10px;
+    font-size: 21px;
+    line-height: 18px;
   }
 }
 
@@ -115,6 +113,10 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+
+  @media #{$media-desktop} {
+    margin-top: 65px;
+  }
 }
 
 .promo__item {
@@ -138,6 +140,12 @@
   font-weight: 300;
   padding-right: 20px;
   padding-left: 20px;
+
+  @media #{$media-desktop} {
+    font-size: $font-size-base;
+    padding: 0;
+    margin-top: 50px;
+  }
 }
 
 .promo__img {

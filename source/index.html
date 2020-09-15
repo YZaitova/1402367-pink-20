@@ -9,20 +9,20 @@
   <body>
     <header class="header">
       <div class="header__wrap">
-        <div class="header__container">
+        <nav class="header__nav header__nav--closed header__nav--nojs">
           <a class="logo header__logo" href="index.html">
             <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
           </a>
-          <!-- <button class="header__navigation-toggle" type="button">
+          <button class="header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-          </button> -->
-          <nav class="header__nav">
+          </button>
+          <div class="header__container">
             <a class="header__link header__link--active" href="#">Главная</a>
             <a class="header__link" href="photo.html" >Фотографии</a>
             <a class="header__link" href="form.html">Конкурс</a>
             <a class="header__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </div>
       <section class="promo promo--index">
         <div class="promo__head-wrap">
@@ -61,12 +61,11 @@
     </header>
     <main>
       <h1 class="visually-hidden">Сайт «Pink» — взгляните на жизнь иначе!</h1>
-      <section class="benefits">
+      <section class="benefits benefits__container">
         <div class="benefits__container">
-          <h2 class="benefits__text">Устали от серости мегаполиса?</h2>
-          <h3 class="benefits__text">Нам есть, что вам предложить!</h3>
+          <h2 class="benefits__text">Устали от серости мегаполиса?<br>Нам есть, что вам<br> предложить!</h2>
         </div>
-        <div class="benefits__wrap">
+        <div class="benefits__container">
           <ul class="benefits__list">
             <li class="benefits__item benefits__item--mood">
               <h4 class="benefits__heading benefits__heading--mood">Поднимает настроение</h4>
@@ -81,7 +80,7 @@
               </p>
             </li>
             <li class="benefits__item benefits__item--friends">
-              <h4 class="benefits__heading benefits__heading--friends">Заводит новых друзей</h4>
+              <h4 class="benefits__heading benefits__heading--friends">Заводит<br> новых друзей</h4>
               <p class="benefits__paragraph benefits__paragraph--friends">
                 Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
@@ -89,7 +88,7 @@
           </ul>
         </div>
       </section>
-      <section class="research research--hide">
+      <section class="research">
         <div class="research__wrap">
           <div class="research__container">
             <h4 class="research__heading">Эффект на 24 часа!</h4>
@@ -174,7 +173,7 @@
         </div>
         <div class="contacts__map">
           <div class="contacts__container">
-            <span class="contacts__map-decor"></span>
+            <div class="contacts__map-decor"></div>
             <!-- <iframe src="" frameborder="0"></iframe> -->
           </div>
         </div>
@@ -212,6 +211,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/main.js"></script>
   </body>
 </html>
