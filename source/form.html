@@ -11,7 +11,11 @@
       <div class="header__wrap">
         <nav class="header__nav header__nav--closed header__nav--nojs">
           <a class="logo header__logo" href="index.html">
-            <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'">
+            <picture>
+              <source media="(min-width: 860px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 500px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="Логотип сайта 'Пинк'" width="74" height="23">
+            </picture>
           </a>
           <button class="header__nav-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -114,7 +118,11 @@
     <footer class="footer">
       <div class="footer__container">
         <a class="logo footer__logo" href="index.html">
-          <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'">
+          <picture>
+            <source media="(min-width: 860px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width: 500px)" srcset="img/logo-pink-blue-tablet.svg">
+            <img class="logo__img" src="img/logo-pink-blue-mobile.svg" alt="Логотип сайта 'Пинк'" width="74" height="23">
+          </picture>
         </a>
         <div class="socials">
           <ul class="socials__list">
