@@ -100,7 +100,7 @@
     padding-left: 15px;
 
     &::before {
-      content: attr(aria-label)
+      content: attr(aria-label);
     }
 
     @media #{$media-tablet} {
