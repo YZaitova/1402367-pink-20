@@ -3,6 +3,7 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   padding-bottom: 98px;
+  overflow: hidden;
 
   @include container();
 }
@@ -56,6 +57,7 @@
 
   @media #{$media-tablet} {
     font-size: $font-size-base;
+    width: 100%;
   }
 }
 
@@ -72,11 +74,53 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 30px;
+    width: 33%;
+    padding-top: 15px;
+    padding-left: 15px;
+
+    &::before {
+      content: attr(aria-label);
+    }
+
+    @media #{$media-tablet} {
+      width: 25%;
+
+      &::before {
+        content: none;
+      }
+    }
   }
 
   &--cross {
     background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: center center;
+    width: 33%;
+    padding-top: 15px;
+    padding-left: 15px;
+
+    &::before {
+      content: attr(aria-label);
+    }
+
+    @media #{$media-tablet} {
+      width: 25%;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+
+.table__special {
+  display: none;
+
+  @media #{$media-tablet} {
+    display: block;
+  }
+
+  @media #{$media-desktop} {
+    display: block;
   }
 }

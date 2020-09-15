@@ -22,3 +22,5 @@ $media-mobile: screen and (min-width: $width-mobile);
 $media-tablet: screen and (min-width: $width-tablet);
 $media-desktop: screen and (min-width: $width-desktop);
 $media-mobile-only: screen and (max-width: $width-desktop);
+// media retina
+$retina-grafic: (min-resolution: 2dppx);

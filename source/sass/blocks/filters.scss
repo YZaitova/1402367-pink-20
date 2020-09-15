@@ -1,14 +1,30 @@
-// .filter__label {
-
-// }
+.filter__label {
+  display: block;
+}
 
 .filter__range {
   appearance: none;
   height: 2px;
   background-color: $base-color-dark;
-  //background: #FFFFFF;
-  //border: 2px solid #D22856;
-  //box-sizing: border-box;
+
+  @media #{$media-tablet} {
+    // padding: 21px 80px;
+  }
+
+  @media #{$media-desktop} {
+    border-bottom: 1px solid rgba($color: $base-color-dark, $alpha: 0.3);
+  }
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    background-color: $base-color-white;
+    border: 2px solid $base-color-bright;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 0;
+  }
 }
 
 .filter__btn {
@@ -19,18 +35,32 @@
   border: none;
   background-color: $base-color-white;
   border-radius: 30px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  width: 100%;
+  padding: 21px 90px;
 
   &--submit {
     color: $base-color-bright;
     border: 3px solid $base-color-bright;
+
+    @media #{$media-tablet} {
+      padding: 21px 80px;
+    }
+
+    @media #{$media-desktop} {
+      padding: 21px 42px;
+    }
   }
 
   &--reset {
     color: $base-color-dark;
     opacity: 0.1;
     border: 3px solid  $base-color-dark;
+
+    @media #{$media-tablet} {
+      padding: 21px 80px;
+    }
+
+    @media #{$media-desktop} {
+      padding: 21px 42px;
+    }
   }
 }

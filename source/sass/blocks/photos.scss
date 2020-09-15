@@ -80,8 +80,10 @@
 
     @media #{$media-desktop} {
       margin-top: 50px;
-      // margin-left: calc((100vw - 840px) / 2);
-      // margin-right: calc((100vw - 840px) / 2);
+      margin-left: calc((100vw - 906px) / -2);
+      margin-right: calc((100vw - 906px) / -2);
+      width: 100vw;
+      max-width: none;
     }
   }
 }
