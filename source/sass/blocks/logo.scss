@@ -1,3 +1,15 @@
 .logo {
   text-decoration: none;
 }
+
+.logo__img {
+  @media #{$media-tablet} {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media #{$media-desktop} {
+    width: 147px;
+    height: 40px;
+  }
+}
