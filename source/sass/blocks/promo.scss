@@ -3,6 +3,10 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.jpg");
+  }
+
   @media #{$media-tablet} {
     padding-top: 114px;
     background-image: none;
@@ -12,12 +16,20 @@
 .promo {
   @media #{$media-tablet} {
     background-image: url("../img/iphone-hand-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.jpg");
+    }
   }
 
   @media #{$media-desktop} {
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: 220px 125px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.jpg");
+    }
   }
 
   &--photo,
