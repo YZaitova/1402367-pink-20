@@ -33,13 +33,17 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-color: $base-color-light;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.jpg");
   }
 
   @media #{$media-tablet} {
-    background-position: left top;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+    background-position: -20px 180px;
+    padding-bottom: 0;
+    padding-top: 103px;
   }
 
   @media #{$media-desktop} {
@@ -54,6 +58,7 @@
   text-align: center;
 
   @media #{$media-tablet} {
+    padding-left: 250px;
     width: 50%;
     margin-top: 0;
   }
@@ -103,6 +108,11 @@
   color: $base-color-black;
   text-align: center;
 
+  @media #{$media-tablet} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   @media #{$media-desktop} {
     font-size: 30px;
     line-height: 30px;
@@ -123,6 +133,12 @@
   font-size: 14px;
   color: $base-color-dark;
   text-align: center;
+
+  @media #{$media-tablet} {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 24px;
+  }
 
   @media #{$media-desktop} {
     font-size: $font-size-base;

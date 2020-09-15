@@ -21,8 +21,15 @@
 }
 
 .research__container {
-  padding-left: 370px;
-  padding-bottom: 120px;
+  @media #{$media-tablet} {
+    padding-left: 270px;
+    padding-bottom: 120px;
+  }
+
+  @media #{$media-desktop} {
+    padding-left: 370px;
+    padding-bottom: 120px;
+  }
 }
 
 .research__heading {
