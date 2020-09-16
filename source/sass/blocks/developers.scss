@@ -1,0 +1,16 @@
+.developers {
+  @media #{$media-desktop} {
+    width: 20%;
+  }
+}
+
+.developers__text {
+  font-family: $font-stack;
+  font-size: 14px;
+  color: $base-color-dark;
+  text-decoration: none;
+}
+
+.developers__img {
+  width: 40px;
+}
