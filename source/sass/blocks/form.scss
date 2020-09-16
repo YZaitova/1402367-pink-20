@@ -23,6 +23,7 @@
   font-size: 14px;
   color: $base-color-bright;
   text-transform: uppercase;
+  display: block;
 
   @media #{$media-desktop} {
     margin-right: 20px;

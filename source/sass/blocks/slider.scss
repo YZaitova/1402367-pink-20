@@ -1,3 +1,7 @@
+.slider {
+  position: relative;
+}
+
 .slider__toggles {
   display: flex;
   justify-content: center;
@@ -42,6 +46,32 @@
       border: 3px solid $base-color-dark;
       opacity: 0.3;
       border-radius: 50%;
+    }
+  }
+}
+
+.slider__btn {
+  border: none;
+  width: 22px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+
+  @media #{$media-desktop} {
+    display: block;
+
+    &--left {
+      top: 210px;
+      background-image: url("../img/icon-review-arrow-left.svg");
+    }
+
+    &--right {
+      top: 210px;
+      right: 0;
+      background-image: url("../img/icon-review-arrow-right.svg");
     }
   }
 }
