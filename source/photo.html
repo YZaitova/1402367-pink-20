@@ -150,7 +150,11 @@
         <div class="treatment__container">
           <form class="treatment__form" action="https://echo.htmlacademy.ru" method="post">
             <label class="treatment__form-label">
-              <img class="treatment__img" src="img/photo-road-mobile@1x.jpg" alt="Изображение, которое Вы обрабатываете"  width="300" height="400" />
+              <picture>
+                <source media="(min-width: 860px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 500px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="treatment__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Изображение, которое Вы обрабатываете"  width="300" height="400">
+              </picture>
               <input class="treatment__file" type="file">
             </label>
             <div class="treatment__filters">
