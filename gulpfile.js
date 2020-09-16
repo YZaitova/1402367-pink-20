@@ -36,7 +36,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      build: "source"
+      baseDir: "build"
     },
     cors: true,
     notify: false,
