@@ -1,5 +1,20 @@
 .filter__label {
   display: block;
+
+  // &--crop {
+  //   color: $base-color-bright;
+  //   background-color: $base-color-bright;
+  // }
+
+  // &--fill {
+  //   color: $base-color-bright;
+  //   background-color: $base-color-bright;
+  // }
+
+  // &--contrast {
+  //   color: $base-color-bright;
+  //   background-color: $base-color-bright;
+  // }
 }
 
 .filter__range {
@@ -13,6 +28,7 @@
 
   @media #{$media-desktop} {
     border-bottom: 1px solid rgba($color: $base-color-dark, $alpha: 0.3);
+    padding-left: 50px;
   }
 
   &::-webkit-slider-thumb {
