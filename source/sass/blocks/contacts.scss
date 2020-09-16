@@ -48,6 +48,16 @@
 
 .contacts__link {
   display: block;
+
+  &:hover {
+    text-decoration-line: underline;
+    color: $base-color-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }
 
 .contacts__paragraph {

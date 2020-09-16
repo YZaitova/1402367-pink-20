@@ -41,6 +41,15 @@
     color: $base-color-bright;
     border: 3px solid $base-color-bright;
 
+    &:hover {
+      color: $base-color-white;
+      background-color: $base-color-bright;
+    }
+
+    &:active {
+      color: rgba($color: $base-color-white, $alpha: 0.3);
+    }
+
     @media #{$media-tablet} {
       padding: 21px 80px;
     }
@@ -54,6 +63,15 @@
     color: $base-color-dark;
     opacity: 0.1;
     border: 3px solid  $base-color-dark;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      opacity: 0.3;
+      background-color: $base-color-dark;
+    }
 
     @media #{$media-tablet} {
       padding: 21px 80px;

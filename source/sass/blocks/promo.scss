@@ -106,6 +106,15 @@
   margin-right: auto;
   margin-left: auto;
 
+  &:hover {
+    color: $base-color-bright;
+    background-color: $base-color-white;
+  }
+
+  &:active {
+    color: rgba($color: $base-color-bright, $alpha: 0.3);
+  }
+
   @media #{$media-tablet} {
     font-size: $font-size-base;
   }
