@@ -1,10 +1,10 @@
 
-.body {
-  display: grid;
-  grid-template-columns: 20px 1fr 20px;
-  grid-template-rows: min-content 1fr min-content;
+// .body {
+//   // display: grid;
+//   // grid-template-columns: 20px 1fr 20px;
+//   // grid-template-rows: min-content 1fr min-content;
 
-  @media #{$media-desktop} {
-    grid-template-columns: 20px 1fr 20px;
-  }
-}
+//   // @media #{$media-desktop} {
+//   //   grid-template-columns: 20px 1fr 20px;
+//   // }
+// }

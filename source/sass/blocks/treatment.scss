@@ -49,21 +49,7 @@
 
 .treatment__label {
   display: block;
-
-  // &--crop {
-  //   color: $base-color-bright;
-  //   background-color: $base-color-bright;
-  // }
-
-  // &--fill {
-  //   color: $base-color-bright;
-  //   background-color: $base-color-bright;
-  // }
-
-  // &--contrast {
-  //   color: $base-color-bright;
-  //   background-color: $base-color-bright;
-  // }
+  position: relative;
 }
 
 .treatment__range {
@@ -77,7 +63,9 @@
 
   @media #{$media-desktop} {
     border-bottom: 1px solid rgba($color: $base-color-dark, $alpha: 0.3);
-    padding-left: 50px;
+    margin-left: 93px;
+    width: 288px;
+    margin-bottom: 55px;
   }
 
   &::-webkit-slider-thumb {
@@ -120,7 +108,8 @@
     }
 
     @media #{$media-desktop} {
-      padding: 21px 42px;
+      margin-top: 1px;
+      padding: 13px 40px;
     }
   }
 
@@ -143,7 +132,29 @@
     }
 
     @media #{$media-desktop} {
-      padding: 21px 42px;
+      margin-top: 1px;
+      padding: 15px 50px;
+      margin-left: 40px;
     }
+  }
+}
+
+.treatment__svg {
+  position: absolute;
+  @media #{$media-desktop} {
+
+    &--fill {
+      top: -3px;
+      left: -1px;
+    }
+    &--contrast {
+      top: -1px;
+      left: 6px;
+    }
+    &--crop {
+      top: -5px;
+      left: -2px;
+    }
+
   }
 }

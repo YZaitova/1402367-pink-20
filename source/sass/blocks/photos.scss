@@ -75,11 +75,8 @@
   }
 
   &--panorama {
-    // margin-left: calc((100vw - 280px) / 2);
-    // margin-right: calc((100vw - 280px) / 2);
-
     @media #{$media-desktop} {
-      margin-top: 50px;
+      margin-top: 0;
       margin-left: calc((100vw - 906px) / -2);
       margin-right: calc((100vw - 906px) / -2);
       width: 100vw;
