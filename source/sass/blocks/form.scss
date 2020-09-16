@@ -231,6 +231,11 @@
   }
 }
 
+.form__checkbox + label {
+  content:"";
+  display: inline-block;
+}
+
 .form__radio {
   margin: 0;
   position: absolute;

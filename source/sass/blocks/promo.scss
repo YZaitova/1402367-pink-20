@@ -1,7 +1,7 @@
 .promo__head-wrap {
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: left bottom;
 
   @media #{$retina-grafic} {
     background-image: url("../img/iphone-hand-mobile@2x.jpg");
@@ -40,11 +40,12 @@
 
 .promo__container {
   @include container ();
+  min-height: 395px;
 }
 
 .promo__heading {
   margin: 0;
-  padding: 35px 14px 34px 16px;
+  padding: 20px 14px 34px 16px;
   color: $base-color-white;
   font-size: 24px;
   font-weight: 300;
@@ -74,7 +75,7 @@
 .promo__wrap {
   background-color: $bg-color-dark;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
 
   @media #{$media-tablet} {
     background-color: transparent;
@@ -96,13 +97,13 @@
   display: block;
   font-family: inherit;
   color: $base-color-white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   border: 3px solid $base-color-white;
   border-radius: 29px;
   text-decoration: none;
   text-align: center;
-  padding: 15px 0;
+  padding: 12px 0;
   margin-right: auto;
   margin-left: auto;
 
@@ -156,6 +157,7 @@
 .promo__text {
   color: $base-color-white;
   font-size: 14px;
+  line-height: 1.6;
   margin-top: 18px;
   text-align: center;
   font-weight: 300;

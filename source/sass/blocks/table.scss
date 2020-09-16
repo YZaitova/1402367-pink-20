@@ -107,10 +107,10 @@
   display: none;
 
   @media #{$media-tablet} {
-    display: block;
+    display: table-cell;
   }
 
   @media #{$media-desktop} {
-    display: block;
+    display: table-cell;
   }
 }
