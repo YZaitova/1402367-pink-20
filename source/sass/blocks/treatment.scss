@@ -141,20 +141,21 @@
 
 .treatment__svg {
   position: absolute;
-  @media #{$media-desktop} {
 
+  @media #{$media-desktop} {
     &--fill {
       top: -3px;
       left: -1px;
     }
+
     &--contrast {
       top: -1px;
       left: 6px;
     }
+
     &--crop {
       top: -5px;
       left: -2px;
     }
-
   }
 }
